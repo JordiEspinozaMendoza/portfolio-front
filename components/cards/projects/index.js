@@ -10,8 +10,7 @@ const Container = styled.div`
   }
 `;
 export const ProjectCard = ({ data, onClick }) => {
-  const { name, name_en, description, description_en, image_url, urls, tags } =
-    data;
+  const { name, name_en, image_url, tags } = data;
   return (
     <Container className={styles.project__card}>
       <div className={styles.project__card__content}>

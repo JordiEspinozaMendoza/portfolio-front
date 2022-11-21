@@ -9,7 +9,15 @@ const Container = styled.div`
 `;
 export const EducationCard = ({ data }) => {
   const { language } = useLanguage({ es: {}, en: {} });
-  const { title, description, time_data, item_url, present } = data;
+  const {
+    title,
+    title_en,
+    description,
+    description_en,
+    time_data,
+    item_url,
+    present,
+  } = data;
   const handleGetTime = () => {
     const { start, end } = time_data;
     const { year: startYear, month: startMonth } = start;
@@ -32,10 +40,12 @@ export const EducationCard = ({ data }) => {
     <Container className={styles.education__card}>
       <div className={styles.education__card__title}>
         <TextComponent
-          text={title}
+          text={{
+            en: title_en,
+            es: title,
+          }}
           type="h3"
           modifiers={["tertiaryColor"]}
-          disableLocales
         />
         <TextComponent
           text={handleGetTime()}
@@ -56,7 +66,13 @@ export const EducationCard = ({ data }) => {
         )}
       </div>
       <div className={styles.education__card__description}>
-        <TextComponent text={description} type="p" disableLocales />
+        <TextComponent
+          text={{
+            en: description_en,
+            es: description,
+          }}
+          type="p"
+        />
       </div>
     </Container>
   );

@@ -93,7 +93,7 @@ export const mainTheme = {
   },
   // * Loader
   loader: {
-    background: main[100],
+    background: main[200],
   },
   // * Footer
   footer: {
@@ -216,7 +216,7 @@ export const lightTheme = {
   },
   // * Loader
   loader: {
-    background: light[100],
+    background: main[200],
   },
   // * Footer
   footer: {
