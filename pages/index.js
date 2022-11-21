@@ -32,9 +32,6 @@ const Container = styled.div`
   }
 `;
 export default function Home(props) {
-  useEffect(() => {
-    console.log(props.test);
-  }, []);
   const { skillset, experience, education, projects, about } = props;
   const { data: dataSkillset, error: errorSkillset } = skillset || {
     data: null,
@@ -194,7 +191,7 @@ export default function Home(props) {
     </PageContainer>
   );
 }
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const skillset = await getAPIServerSideProps({
     url: "/api/skillset",
   });
