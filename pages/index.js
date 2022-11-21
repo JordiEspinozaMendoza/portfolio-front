@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { formatLanguageText, TextComponent } from "components";
 import { PageContainer } from "components/containers";
 import { HeaderComponent } from "components/header";
@@ -32,6 +32,9 @@ const Container = styled.div`
   }
 `;
 export default function Home(props) {
+  useEffect(() => {
+    console.log(props.test);
+  }, []);
   const { skillset, experience, education, projects, about } = props;
   const { data: dataSkillset, error: errorSkillset } = skillset || {
     data: null,
@@ -214,6 +217,7 @@ export async function getStaticProps() {
       education,
       projects,
       about,
+      test: process.env.API_URL
     },
   };
 }
