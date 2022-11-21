@@ -9,7 +9,16 @@ const Container = styled.div`
 `;
 export const ExperienceCard = ({ data }) => {
   const { language } = useLanguage({ es: {}, en: {} });
-  const { title, description, company, time_data, company_url, present } = data;
+  const {
+    title,
+    title_en,
+    description,
+    description_en,
+    company,
+    time_data,
+    company_url,
+    present,
+  } = data;
   const handleGetTime = () => {
     const { start, end } = time_data;
     const { year: startYear, month: startMonth } = start;
@@ -32,10 +41,12 @@ export const ExperienceCard = ({ data }) => {
     <Container className={styles.experience__card}>
       <div className={styles.experience__card__title}>
         <TextComponent
-          text={title}
+          text={{
+            en: title_en,
+            es: title,
+          }}
           type="h3"
           modifiers={["tertiaryColor"]}
-          disableLocales
         />
         <TextComponent
           text={company}
@@ -52,7 +63,13 @@ export const ExperienceCard = ({ data }) => {
         />
       </div>
       <div className={styles.experience__card__description}>
-        <TextComponent text={description} type="p" disableLocales />
+        <TextComponent
+          text={{
+            en: description_en,
+            es: description,
+          }}
+          type="p"
+        />
       </div>
     </Container>
   );

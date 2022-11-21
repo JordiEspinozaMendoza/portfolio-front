@@ -6,6 +6,7 @@ import styled, { ThemeProvider } from "styled-components";
 import { GeneralSEO } from "utils/seo";
 import { lightTheme, mainTheme } from "utils/themes";
 import "../styles/globals.css";
+import { Loader } from "components/loader";
 export const GlobalContext = createContext({
   language: "en",
 });
@@ -29,6 +30,21 @@ function MyApp({ Component, pageProps }) {
     localStorage.setItem("theme", theme);
     setTheme(theme);
   };
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+  useEffect(() => {
+    const handleStart = (url) => {
+      url !== router.pathname ? setLoading(true) : setLoading(false);
+    };
+    const handleComplete = () => setLoading(false);
+    router.events.on("routeChangeStart", handleStart);
+    router.events.on("routeChangeComplete", handleComplete);
+    router.events.on("routeChangeError", handleComplete);
+
+    if (error) {
+      setError(false);
+    }
+  }, [router, error]);
   useEffect(() => {
     const themeFromStorage = localStorage.getItem("theme");
     if (themeFromStorage) {
@@ -45,7 +61,23 @@ function MyApp({ Component, pageProps }) {
         <GeneralSEO />
         <Navbar />
         <Container>
-          <Component {...pageProps} />
+          {loading ? (
+            <div className="loader__page">
+              <Loader />
+            </div>
+          ) : error ? (
+            <div className="error__page">
+              <TextComponent
+                type="h1"
+                text={{
+                  en: "Something went wrong",
+                  es: "Algo salió mal",
+                }}
+              />
+            </div>
+          ) : (
+            <Component {...pageProps} />
+          )}
         </Container>
         <Footer />
       </ThemeProvider>

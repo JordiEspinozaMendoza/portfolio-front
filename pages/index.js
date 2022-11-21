@@ -69,11 +69,11 @@ export default function Home(props) {
         >
           <TextComponent
             locales={
-              dataAbout && dataAbout?.attributes && !errorAbout
+              dataAbout && dataAbout.data?.attributes && !errorAbout
                 ? formatLanguageText({
                     language,
-                    en: dataAbout?.attributes?.description_en,
-                    es: dataAbout?.attributes?.description,
+                    en: dataAbout.data?.attributes?.description_en,
+                    es: dataAbout.data?.attributes?.description,
                   })
                 : t.description
             }
