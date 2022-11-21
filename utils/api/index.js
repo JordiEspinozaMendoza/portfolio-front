@@ -35,7 +35,9 @@ export const petition = async ({
 };
 export const getAPIServerSideProps = async ({ url }) => {
   try {
-    const response = await fetch(`${process.env.API_URL}${url}`);
+    const response = await fetch(`${process.env.API_URL}${url}`, {
+      cache: "no-cache",
+    });
     const data = await response.json();
     return { data: data ? data : null, error: null, consoleError: null };
   } catch (error) {
