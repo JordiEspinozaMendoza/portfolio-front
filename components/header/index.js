@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button } from "components/buttons";
-import { TextComponent } from "components/texts";
+import { formatLanguageText, TextComponent } from "components/texts";
 import { useLanguage } from "hooks";
 import React from "react";
 import styled from "styled-components";
@@ -19,8 +19,9 @@ const Container = styled.div`
     color: ${(props) => props.theme.header.color};
   }
 `;
-export const HeaderComponent = () => {
-  const { t } = useLanguage({ en, es });
+export const HeaderComponent = ({ data, error }) => {
+  const { attributes } = data.data || {};
+  const { t, language } = useLanguage({ en, es });
   return (
     <Container className={styles.header}>
       <div className={styles.header__container}>
@@ -29,14 +30,49 @@ export const HeaderComponent = () => {
             <div className={styles.header__text}>
               <TextComponent
                 type="p"
-                locales={t.subtitle}
+                locales={
+                  attributes &&
+                  attributes?.header_subtitle &&
+                  attributes?.header_subtitle_en &&
+                  !error
+                    ? formatLanguageText({
+                        language,
+                        en: attributes?.header_subtitle_en,
+                        es: attributes?.header_subtitle,
+                      })
+                    : t.subtitle
+                }
                 modifiers={["secondaryColor"]}
               />
-              <TextComponent type="h1" locales={t.title} />
+              <TextComponent
+                type="h1"
+                locales={
+                  attributes && attributes?.name && !error
+                    ? attributes?.name
+                    : t.title
+                }
+              />
             </div>
             <div className={styles.header__buttons}>
-              <Button type="secondary" locales={t.button_1} />
-              <Button type="tertiary" locales={t.button_2} />
+              {attributes && attributes?.cv_url && !error && (
+                <Button
+                  type="secondary"
+                  locales={t.button_1}
+                  onClick={() => window.open(attributes?.cv_url, "_blank")}
+                />
+              )}
+              {attributes && attributes?.email_contact && !error && (
+                <Button
+                  type="tertiary"
+                  locales={t.button_2}
+                  onClick={() =>
+                    window.open(
+                      `mailto:${attributes?.email_contact}?subject=Hello%20Jordi%20Espinoza`,
+                      "_blank"
+                    )
+                  }
+                />
+              )}
             </div>
           </div>
         </div>
