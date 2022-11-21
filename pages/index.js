@@ -1,4 +1,5 @@
-import { TextComponent } from "components";
+import { useState } from "react";
+import { formatLanguageText, TextComponent } from "components";
 import { PageContainer } from "components/containers";
 import { HeaderComponent } from "components/header";
 import { Section } from "components/sections";
@@ -12,7 +13,7 @@ import styled from "styled-components";
 import { ExperienceCard } from "components/cards/experience";
 import { EducationCard } from "components/cards/education";
 import { ProjectCard } from "components/cards/projects";
-import { useEffect } from "react";
+import { Modal } from "components/modal";
 const Container = styled.div`
   .experience,
   .education {
@@ -31,7 +32,7 @@ const Container = styled.div`
   }
 `;
 export default function Home(props) {
-  const { skillset, experience, education, projects } = props;
+  const { skillset, experience, education, projects, about } = props;
   const { data: dataSkillset, error: errorSkillset } = skillset || {
     data: null,
     error: true,
@@ -48,14 +49,16 @@ export default function Home(props) {
     data: null,
     error: true,
   };
-  const { t } = useLanguage({ es, en });
-  useEffect(() => {
-    console.log(process.env.NEXT_PUBLIC_STRAPI_URL);
-  }, []);
+  const { data: dataAbout, error: errorAbout } = about || {
+    data: null,
+    error: true,
+  };
+  const { t, language } = useLanguage({ es, en });
+  const [selectedProject, setSelectedProject] = useState(null);
   return (
     <PageContainer title={t.title} description={t.description}>
       <div className={styles.container}>
-        <HeaderComponent />
+        <HeaderComponent data={dataAbout} error={errorAbout} />
       </div>
       <div className={styles.about}>
         <Section
@@ -64,7 +67,18 @@ export default function Home(props) {
           locales
           background="primary"
         >
-          <TextComponent locales={t.description} type="p" />
+          <TextComponent
+            locales={
+              dataAbout && dataAbout?.attributes && !errorAbout
+                ? formatLanguageText({
+                    language,
+                    en: dataAbout?.attributes?.description_en,
+                    es: dataAbout?.attributes?.description,
+                  })
+                : t.description
+            }
+            type="p"
+          />
           <TextComponent
             locales={t.about.skill_set}
             type="p"
@@ -122,10 +136,56 @@ export default function Home(props) {
               {dataProjects.data
                 .sort((a, b) => b.attributes?.featured - a.attributes?.featured)
                 .map((item, index) => (
-                  <ProjectCard key={index} data={item?.attributes} />
+                  <ProjectCard
+                    key={index}
+                    data={item?.attributes}
+                    onClick={(data) => setSelectedProject(data)}
+                  />
                 ))}
             </div>
           )}
+          <Modal
+            show={selectedProject}
+            title={formatLanguageText({
+              language,
+              en: selectedProject?.name_en,
+              es: selectedProject?.name,
+            })}
+            onClose={() => setSelectedProject(null)}
+          >
+            <div className={styles.modal__content}>
+              <TextComponent
+                type="p"
+                text={{
+                  en: selectedProject?.description_en,
+                  es: selectedProject?.description,
+                }}
+              />
+              {selectedProject?.urls?.data?.length > 0 && (
+                <div className={styles.modal__content__links}>
+                  <TextComponent type="h5" locales={t.projects.links} />
+                  <ul>
+                    {selectedProject?.urls?.data?.map((item, index) => (
+                      <li key={index}>
+                        <a
+                          href={item?.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {item?.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {selectedProject?.image_url && (
+                <div className={styles.modal__content__image}>
+                  <img src={selectedProject?.image_url} alt="" />
+                </div>
+              )}
+            </div>
+          </Modal>
         </div>
       </Container>
     </PageContainer>
@@ -144,12 +204,16 @@ export async function getStaticProps() {
   const projects = await getAPIServerSideProps({
     url: "/api/projects",
   });
+  const about = await getAPIServerSideProps({
+    url: "/api/about",
+  });
   return {
     props: {
       skillset,
       experience,
       education,
       projects,
+      about,
     },
   };
 }
