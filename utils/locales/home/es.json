@@ -2,7 +2,7 @@
   "title": "Inicio",
   "description": "An experienced Front-end Developer with 2 years of software development experience, who has worked extensively on the front-end aspect of web applications using React JS, Next JS and JavaScript. ",
   "about": {
-    "title": "Sobre mi",
+    "title": "Sobre mí",
     "skill_set": "Habilidades"
   },
   "experience": {
@@ -13,6 +13,7 @@
     "title": "Educación y certificaciones"
   },
   "projects": {
-    "title": "Proyectos"
+    "title": "Proyectos",
+    "links": "Enlaces"
   }
 }

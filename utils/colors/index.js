@@ -8,13 +8,13 @@ export const main = {
   700: "#B1A7A6",
 };
 export const light = {
-  100: "#F5F3F4",
+  100: "#FFF",
   200: "#BA181B",
   300: "#A4161A",
-  400: "#CCC9CA",
-  500: "#BEBABD",
+  400: "#F6F8FA",
+  500: "#F2F2F2",
   600: "#B0ADAF",
-  700: "#B1A7A6",
+  700: "#FFFFFF",
 };
 export const neutral = {
   100: "#ffffff",

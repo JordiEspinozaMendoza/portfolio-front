@@ -32,7 +32,6 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     const themeFromStorage = localStorage.getItem("theme");
     if (themeFromStorage) {
-      console.log("theme", themeFromStorage);
       setTheme(themeFromStorage);
     } else {
       setTheme("main");

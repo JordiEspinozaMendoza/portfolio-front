@@ -27,6 +27,7 @@ export const mainTheme = {
     background: main[400],
     backgroundAlt: neutral[600],
     color: neutral[100],
+    border: "none",
     hover: {
       background: main[500],
       color: main[500],
@@ -63,7 +64,7 @@ export const mainTheme = {
       color: text.textInverted,
       hover: {
         background: main[700],
-        color: text.textInverted,
+        color: text.text,
       },
     },
     social: {
@@ -83,6 +84,7 @@ export const mainTheme = {
   card: {
     background: main[400],
     color: text.text,
+    border: "1px solid transparent",
     hover: {
       background: main[200],
       color: text.textInverted,
@@ -116,19 +118,22 @@ export const mainTheme = {
     },
   },
   modal: {
-    background: neutral[100],
+    background: main[100],
+    color: text.textInverted,
   },
 };
 export const lightTheme = {
-  primaryColor: light[100],
+  primaryColor: light[500],
   secondaryColor: light[300],
   tertiaryColor: light[200],
+  quaternaryColor: light[400],
+  quinaryColor: light[500],
   primary: light[100],
   secondary: light[300],
   tertiary: light[200],
   background: light[400],
-  textColor: "#333",
-  textColorInverted: "#fff",
+  textColor: "#fff",
+  textColorInverted: "#333",
   borderText: light[200],
   light: {
     background: light[400],
@@ -144,7 +149,8 @@ export const lightTheme = {
   navbar: {
     background: light[500],
     backgroundAlt: neutral[600],
-    color: neutral[100],
+    color: neutral[600],
+    border: "1px solid #ccc",
     hover: {
       background: light[500],
       color: light[500],
@@ -165,7 +171,7 @@ export const lightTheme = {
       color: text.text,
       hover: {
         background: neutral[600],
-        color: text.textInverted,
+        color: text.text,
       },
     },
     secondary: {
@@ -173,15 +179,15 @@ export const lightTheme = {
       color: text.textInverted,
       hover: {
         background: light[400],
-        color: text.textInverted,
+        color: text.text,
       },
     },
     tertiary: {
       background: light[400],
-      color: text.textInverted,
+      color: text.text,
       hover: {
         background: light[700],
-        color: text.textInverted,
+        color: text.text,
       },
     },
     social: {
@@ -201,6 +207,7 @@ export const lightTheme = {
   card: {
     background: neutral[100],
     color: text.text,
+    border: "1px solid #ccc",
     hover: {
       background: light[200],
       color: text.textInverted,
@@ -234,6 +241,7 @@ export const lightTheme = {
     },
   },
   modal: {
-    background: neutral[100],
+    background: light[100],
+    color: text.text,
   },
 };
