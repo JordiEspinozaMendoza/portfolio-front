@@ -5,10 +5,11 @@ import { TextComponent } from "components/texts";
 import { useLanguage } from "hooks";
 const Container = styled.div`
   background-color: ${(props) => props.theme.card.background};
+  border: ${(props) => props.theme.card.border};
 `;
 export const ExperienceCard = ({ data }) => {
   const { language } = useLanguage({ es: {}, en: {} });
-  const { title, description, company, time_data, company_url } = data;
+  const { title, description, company, time_data, company_url, present } = data;
   const handleGetTime = () => {
     const { start, end } = time_data;
     const { year: startYear, month: startMonth } = start;
@@ -21,6 +22,10 @@ export const ExperienceCard = ({ data }) => {
     const endDate = `${new Date(endYear, endMonth).toLocaleString(language, {
       month: "long",
     })} ${endYear}`;
+    if (present) {
+      let text = language === "es" ? "Actualidad" : "Present";
+      return `${startDate} - ${text}`;
+    }
     return `${startDate} - ${endDate}`;
   };
   return (

@@ -5,19 +5,28 @@ import { TextComponent } from "components/texts";
 import { useLanguage } from "hooks";
 const Container = styled.div`
   background-color: ${(props) => props.theme.card.background};
+  border: ${(props) => props.theme.card.border};
 `;
 export const EducationCard = ({ data }) => {
   const { language } = useLanguage({ es: {}, en: {} });
-  const { title, description, time_data } = data;
+  const { title, description, time_data, item_url, present } = data;
   const handleGetTime = () => {
-    const { date } = time_data;
-    const { year, month } = date;
-
+    const { start, end } = time_data;
+    const { year: startYear, month: startMonth } = start;
+    const { year: endYear, month: endMonth } = end;
     // return with language
-    const startDate = `${new Date(year, month).toLocaleString(language, {
+    const startDate = `${new Date(startYear, startMonth).toLocaleString(
+      language,
+      { month: "long" }
+    )} ${startYear}`;
+    const endDate = `${new Date(endYear, endMonth).toLocaleString(language, {
       month: "long",
-    })} ${year}`;
-    return `${startDate}`;
+    })} ${endYear}`;
+    if (present) {
+      let text = language === "es" ? "Actualidad" : "Present";
+      return `${startDate} - ${text}`;
+    }
+    return `${startDate} - ${endDate}`;
   };
   return (
     <Container className={styles.education__card}>
@@ -34,6 +43,17 @@ export const EducationCard = ({ data }) => {
           disableLocales
           className={styles.education__card__title__time}
         />
+        {item_url && (
+          <TextComponent
+            text={{
+              en: "View",
+              es: "Ver",
+            }}
+            type="p"
+            className={styles.education__card__title__link}
+            onClick={() => window.open(item_url, "_blank")}
+          />
+        )}
       </div>
       <div className={styles.education__card__description}>
         <TextComponent text={description} type="p" disableLocales />

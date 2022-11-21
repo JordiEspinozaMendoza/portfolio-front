@@ -9,13 +9,14 @@ const Container = styled.div`
     color: ${(props) => props.theme.textColorInverted};
   }
 `;
-export const ProjectCard = ({ data }) => {
-  const { name, name_en, description, description_en, image_url, urls } = data;
+export const ProjectCard = ({ data, onClick }) => {
+  const { name, name_en, description, description_en, image_url, urls, tags } =
+    data;
   return (
     <Container className={styles.project__card}>
       <div className={styles.project__card__content}>
         <div className={styles.project__card__image}>
-          <img src={image_url} alt={name_en} />
+          <img src={image_url} alt={name_en} onClick={() => onClick(data)} />
         </div>
         <div className={styles.project__card__text}>
           <TextComponent
@@ -25,6 +26,22 @@ export const ProjectCard = ({ data }) => {
               es: name,
             }}
           />
+          {tags?.data?.length > 0 && (
+            <div className={styles.project__card__text__tags}>
+              <TextComponent type="p" text="Tags:" disableLocales />{" "}
+              <div className={styles.project__card__text__tags__list}>
+                {tags.data.map((tag, index) => (
+                  <TextComponent
+                    type="p"
+                    text={`${tag}${index !== tags.data.length - 1 ? "," : " "}`}
+                    disableLocales
+                    key={tag}
+                    className={styles.project__card__text__tags__tag}
+                  />
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </Container>
