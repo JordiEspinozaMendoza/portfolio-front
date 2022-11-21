@@ -66,8 +66,8 @@ export default function Home(props) {
             type="p"
             modifiers={["tertiaryColor"]}
           />
-          {!errorSkillset && dataSkillset && dataSkillset.data.attributes && (
-            <SkillSet data={dataSkillset.data.attributes.data.data} />
+          {!errorSkillset && dataSkillset && dataSkillset.data?.attributes && (
+            <SkillSet data={dataSkillset.data.attributes?.data.data} />
           )}
         </Section>
       </div>
@@ -83,8 +83,8 @@ export default function Home(props) {
           </div>
           {!errorExperience && dataExperience && dataExperience.data && (
             <div className={styles.experience__content}>
-              {dataExperience.data.map((item, index) => (
-                <ExperienceCard key={index} data={item.attributes} />
+              {dataExperience?.data.map((item, index) => (
+                <ExperienceCard key={index} data={item?.attributes} />
               ))}
             </div>
           )}
@@ -97,10 +97,10 @@ export default function Home(props) {
               modifiers={["tertiaryColor"]}
             />
           </div>
-          {!errorEducation && dataEducation && dataEducation.data && (
+          {!errorEducation && dataEducation && dataEducation?.data && (
             <div className={styles.experience__content}>
-              {dataEducation.data.map((item, index) => (
-                <EducationCard key={index} data={item.attributes} />
+              {dataEducation?.data.map((item, index) => (
+                <EducationCard key={index} data={item?.attributes} />
               ))}
             </div>
           )}
@@ -116,9 +116,9 @@ export default function Home(props) {
           {!errorProjects && dataProjects && dataProjects.data && (
             <div className={styles.projects__content}>
               {dataProjects.data
-                .sort((a, b) => b.attributes.featured - a.attributes.featured)
+                .sort((a, b) => b.attributes?.featured - a.attributes?.featured)
                 .map((item, index) => (
-                  <ProjectCard key={index} data={item.attributes} />
+                  <ProjectCard key={index} data={item?.attributes} />
                 ))}
             </div>
           )}
