@@ -12,6 +12,7 @@ import styled from "styled-components";
 import { ExperienceCard } from "components/cards/experience";
 import { EducationCard } from "components/cards/education";
 import { ProjectCard } from "components/cards/projects";
+import { useEffect } from "react";
 const Container = styled.div`
   .experience,
   .education {
@@ -48,6 +49,9 @@ export default function Home(props) {
     error: true,
   };
   const { t } = useLanguage({ es, en });
+  useEffect(() => {
+    console.log(process.env.NEXT_PUBLIC_STRAPI_URL);
+  }, []);
   return (
     <PageContainer title={t.title} description={t.description}>
       <div className={styles.container}>
