@@ -1,0 +1,98 @@
+@import "assets/sass/breakpoints.module.sass"
+
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100vh
+.header__container
+    display: grid
+    grid-template-columns: 1.5fr 1fr
+    width: 100%
+    height: 100%
+.header__left
+    display: flex
+    align-items: center
+.header__left__content
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    width: 70%
+    margin: 0 auto
+.header__text
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    p,h1
+        margin-top: 0
+        margin-bottom: 0
+    h1
+        font-size: 3rem
+.header__buttons
+    display: flex
+    flex-direction: row
+    gap: 1rem
+    flex-wrap: wrap
+.header__right
+    display: flex
+    align-items: center
+    justify-content: center
+    background-image: url("https://res.cloudinary.com/jordiespinoza/image/upload/v1668934411/portfolio/photo_1_oooe0z.jpg")
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+.header__avatar
+    display: none
+@media screen and (max-width:$xxlarge)
+
+@media screen and (max-width:$xlarge)
+
+@media screen and (max-width:$large)
+
+@media screen and (max-width:$medium)
+
+@media screen and (max-width:$small)
+    .header
+        height: auto
+    .header__container
+        grid-template-columns: 1fr
+        grid-template-areas: "right" "left"
+        gap: 3rem
+        padding: 2rem 0
+    .header__left
+        grid-area: left
+        justify-content: flex-start
+
+    .header__right
+        background-image: none
+        grid-area: right
+    .header__avatar
+        display: block
+        width: 17rem
+        height: 17rem
+        border-radius: 50%
+        margin: 0 auto
+        img
+            width: 100%
+            height: 100%
+            border-radius: 50%
+            object-fit: cover
+    .header__text
+        text-align: center
+        height: auto
+        h1
+            font-size: 2rem
+    .header__left__content
+        align-items: center
+    .header__buttons
+        flex-direction: column
+        width: 100%
+
+@media screen and (max-width:$xs)
+    .header__avatar
+        width: 15rem
+        height: 15rem
+@media screen and (max-width:$xsmall)
+    .header__avatar
+        width: 13rem
+        height: 13rem

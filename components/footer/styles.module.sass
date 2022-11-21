@@ -1,0 +1,47 @@
+@import "assets/sass/breakpoints.module.sass"
+
+.footer
+    min-height: 35vh
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    p
+        width: 100%
+        text-align: center
+        font-size: 1rem
+
+.reach__out__me
+    display: flex
+    margin-bottom: 1rem
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    & > p
+        font-weight: bold
+.social__icons
+    display: flex
+    flex-direction: row
+    margin: 0 auto
+    margin-bottom: 1rem
+    flex-wrap: wrap
+    gap: 1rem
+    margin: 0 auto
+    svg
+        border-radius: 50%
+        padding: 0.5rem
+        border: 1px solid #ccc
+        font-size: 2.7rem
+        color: #ccc
+        transition: all 0.3s ease-in-out
+        &:hover
+            cursor: pointer
+            opacity: 0.8
+
+@media screen and (max-width: $medium)
+    .footer
+        min-height: 50vh
+        padding: 0 1rem
+        .reach__out__me
+            .social__icons

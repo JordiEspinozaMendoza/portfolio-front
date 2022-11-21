@@ -1,0 +1,28 @@
+.navbar
+    padding: 0.5rem 1rem
+    position: sticky
+    top: 0
+    z-index: 100
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+    p, h1, h2
+        margin-top: 0
+        margin-bottom: 0
+.navbar__content
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.navbar__theme__handler
+    .navbar__theme__handler__circle
+        border-radius: 50%
+        cursor: pointer
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 0.5rem
+        svg
+            transition: all 0.3s ease-in-out
+
+        &:hover
+            svg
+                transform: scale(1.1)
