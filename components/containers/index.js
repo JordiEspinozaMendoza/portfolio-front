@@ -2,8 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { SEO } from "utils/seo";
 import { rootDescription, rootTitle } from "utils/seo/settings";
-let urlImageDefault =
-  process.env.NEXT_PUBLIC_HOST + "/assets/images/banner.png";
+let urlImageDefault = "https://portfolio-jordi.s3.amazonaws.com/images/banner.jpg";
 export const PageContainer = ({
   children,
   loading,
