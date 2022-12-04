@@ -63,7 +63,7 @@ export default function Home(props) {
       <div className={styles.about}>
         <Section
           title={t.about.title}
-          image="https://res.cloudinary.com/jordiespinoza/image/upload/v1668973629/portfolio/IMG_2447_cn4det.jpg"
+          image="https://res.cloudinary.com/jordiespinoza/image/upload/v1670134654/portfolio/00009-308241703-Highly_detaile..._tghqbr.png"
           locales
           background="primary"
         >
