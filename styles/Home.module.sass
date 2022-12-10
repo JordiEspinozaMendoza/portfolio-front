@@ -64,3 +64,13 @@
         text-align: center    
 
 @media screen and (max-width:$xs)
+    .experience__title, .education__title
+        h2
+            font-size: 1.5rem
+    
+    .experience__content, .education__content, .projects__content
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+        box-sizing: border-box
+        width: 100%
+
+
