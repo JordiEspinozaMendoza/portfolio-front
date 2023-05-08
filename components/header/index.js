@@ -80,7 +80,7 @@ export const HeaderComponent = ({ data, error }) => {
           {/* mobile devices */}
           <div className={styles.header__avatar}>
             <img
-              src="https://res.cloudinary.com/jordiespinoza/image/upload/v1670134177/portfolio/00013-136412460-Highly_detaile..._upqs8c.png"
+              src="https://portfolio-jordi.s3.amazonaws.com/_DSC9905.JPG"
               alt="Jordi Espinoza"
             />
           </div>
