@@ -80,7 +80,7 @@ export const HeaderComponent = ({ data, error }) => {
           {/* mobile devices */}
           <div className={styles.header__avatar}>
             <img
-              src="https://portfolio-jordi.s3.amazonaws.com/_DSC9905.JPG"
+              src="https://portfolio-jordi.s3.amazonaws.com/_DSC6537.JPG"
               alt="Jordi Espinoza"
               className={styles.header__avatar__image}
             />
