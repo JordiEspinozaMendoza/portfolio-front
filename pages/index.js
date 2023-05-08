@@ -50,7 +50,7 @@ export default function Home() {
       <div className={styles.about}>
         <Section
           title={t.about.title}
-          image="https://res.cloudinary.com/jordiespinoza/image/upload/v1670135244/portfolio/00020-265616859-Close_portrait..._dyhim3.png"
+          image="https://portfolio-jordi.s3.amazonaws.com/_DSC4508.JPG"
           locales
           background="primary"
         >
