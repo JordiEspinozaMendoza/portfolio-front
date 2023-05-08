@@ -1,0 +1,159 @@
+{
+  "data": [
+    {
+      "id": 5,
+      "attributes": {
+        "name": "Consultec",
+        "name_en": "Consultec",
+        "description": "Este proyecto permite la comunicación entre varios clientes a través de mensajería instantánea, usando socket.io y React Js en el frontend.",
+        "description_en": "This project allows communication between several clients through instant messaging, using socket.io and React Js on the frontend side.",
+        "urls": {
+          "data": [
+            {
+              "url": "https://jocular-raindrop-02e6cf.netlify.app",
+              "label": "Website"
+            },
+            {
+              "url": "https://github.com/TribalDevs/consultec-front",
+              "label": "Frontend Repo"
+            },
+            {
+              "url": "https://github.com/TribalDevs/consultec-backend",
+              "label": "Backend Repo"
+            },
+            {
+              "url": "https://github.com/TribalDevs/consultec-server-socket",
+              "label": "Socket.io Repo"
+            }
+          ]
+        },
+        "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2022-11-21+at+23.53.04.png",
+        "featured": null,
+        "createdAt": "2022-11-22T08:15:11.302Z",
+        "updatedAt": "2022-11-22T08:15:14.339Z",
+        "publishedAt": "2022-11-22T08:15:14.200Z",
+        "tags": { "data": ["React JS", "Socket.io", "Django", "Node js"] }
+      }
+    },
+    {
+      "id": 6,
+      "attributes": {
+        "name": "YOU ARE MY SUNSHINE - KINICH-AHAU",
+        "name_en": "YOU ARE MY SUNSHINE - KINICH-AHAU",
+        "description": "Aplicación web para ver niveles de radiación en distintas zonas del mundo Ofrece la facilidad de seleccionar una ubicación de manera sencilla y amigable para el usuario sin tener que dar datos de latitud y longitud.",
+        "description_en": "Web application to see radiation levels in different areas of the world It offers the facility to select a location in a simple and user-friendly way without having to provide latitude and longitude data.",
+        "urls": {
+          "data": [
+            {
+              "url": "https://github.com/JordiEspinozaMendoza/KINICH-AHAU",
+              "label": "GitHub Repo"
+            }
+          ]
+        },
+        "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2022-11-22+at+0.16.15.png",
+        "featured": null,
+        "createdAt": "2022-11-22T08:18:25.812Z",
+        "updatedAt": "2022-11-22T08:18:28.755Z",
+        "publishedAt": "2022-11-22T08:18:28.623Z",
+        "tags": { "data": ["React JS", "Google Maps"] }
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "name": "Odessa Turismo Website",
+        "name_en": "Odessa Turismo Website",
+        "description": "Aplicación web desarrollada con React JS y Django, muestra información sobre nuevos viajes y ofertas.",
+        "description_en": "Web application developed with React JS and Django, it shows information about new trips and offers.",
+        "urls": {
+          "data": [
+            { "url": "https://www.odessaturismo.com", "label": "Website" }
+          ]
+        },
+        "image_url": "https://portfolio-jordi.s3.amazonaws.com/Screenshot+2022-11-20+at+18.55.56.png",
+        "featured": true,
+        "createdAt": "2022-11-21T18:32:42.511Z",
+        "updatedAt": "2022-11-21T18:32:45.571Z",
+        "publishedAt": "2022-11-21T18:32:45.441Z",
+        "tags": {
+          "data": [
+            "React JS",
+            "Web",
+            "Django",
+            "Python",
+            "Google Maps",
+            "Socket io"
+          ]
+        }
+      }
+    },
+    {
+      "id": 1,
+      "attributes": {
+        "name": "Nación Verde",
+        "name_en": "Nación Verde",
+        "description": "Nacion Verde Website",
+        "description_en": "Nacion Verde Website",
+        "urls": {
+          "data": [{ "url": "https://www.nacionverde.org", "label": "Website" }]
+        },
+        "image_url": "https://portfolio-jordi.s3.amazonaws.com/Screenshot+2022-11-21+at+10.23.05.png",
+        "featured": true,
+        "createdAt": "2022-11-21T09:43:01.509Z",
+        "updatedAt": "2022-11-21T18:33:31.705Z",
+        "publishedAt": "2022-11-21T09:43:04.584Z",
+        "tags": { "data": ["React JS", "Web", "Django", "Python"] }
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "name": "Tribal Devs",
+        "name_en": "Tribal Devs",
+        "description": "Sitio web desarrollado para la comunidad Tribal Devs, incluye un sistema para registrar eventos y recibir registros de la comunidad",
+        "description_en": "Website developed for the Tribal Devs community, includes a system to register events and receive registrations from the community.",
+        "urls": {
+          "data": [{ "url": "https://www.tribaldevs.com", "label": "Website" }]
+        },
+        "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2022-11-21+at+23.55.49.png",
+        "featured": null,
+        "createdAt": "2022-11-22T08:01:40.874Z",
+        "updatedAt": "2022-11-22T08:01:44.501Z",
+        "publishedAt": "2022-11-22T08:01:44.364Z",
+        "tags": { "data": ["Next JS", "Web", "Django", "Python"] }
+      }
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "name": "LifeLine",
+        "name_en": "LifeLine",
+        "description": "Proyecto desarrollado para el BioMedTech Baja Hackathon, es una aplicación tipo Uber para ambulancias, esto con el uso de React JS, Flutter y socket.io",
+        "description_en": "Project developed for the BioMedTech Baja Hackathon, it is an Uber-type application for ambulances, this with the use of React JS, Flutter and socket.io",
+        "urls": {
+          "data": [
+            { "url": "https://consuldev.netlify.app", "label": "Website" },
+            {
+              "url": "https://github.com/JordiEspinozaMendoza/lifeline-ambulance",
+              "label": "Frontend Repo"
+            },
+            {
+              "url": "https://github.com/JordiEspinozaMendoza/lifeline-back",
+              "label": "Backend Repo"
+            },
+            {
+              "url": "https://github.com/JordiEspinozaMendoza/lifeline-socket",
+              "label": "Socket.io Repo"
+            }
+          ]
+        },
+        "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2022-11-21+at+23.54.46.png",
+        "featured": false,
+        "createdAt": "2022-11-22T08:08:07.368Z",
+        "updatedAt": "2022-11-22T08:22:16.614Z",
+        "publishedAt": "2022-11-22T08:08:10.367Z",
+        "tags": { "data": ["React JS", "Socket.io", "Django", "Node js"] }
+      }
+    }
+  ]
+}
