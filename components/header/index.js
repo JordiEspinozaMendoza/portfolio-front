@@ -82,6 +82,7 @@ export const HeaderComponent = ({ data, error }) => {
             <img
               src="https://portfolio-jordi.s3.amazonaws.com/_DSC9905.JPG"
               alt="Jordi Espinoza"
+              className={styles.header__avatar__image}
             />
           </div>
         </div>
