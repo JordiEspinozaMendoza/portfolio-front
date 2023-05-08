@@ -13,9 +13,6 @@
         },
         "company": "View",
         "company_url": "https://portfolio-jordi.s3.amazonaws.com/Jordi+Espinoza+Mendoza.pdf",
-        "createdAt": "2022-11-22T04:18:00.253Z",
-        "updatedAt": "2022-11-22T04:21:23.304Z",
-        "publishedAt": "2022-11-22T04:18:02.834Z",
         "present": false
       }
     },
@@ -32,9 +29,6 @@
         },
         "company": "Nación Verde",
         "company_url": "https://nacionverde.org",
-        "createdAt": "2022-11-21T18:18:22.163Z",
-        "updatedAt": "2022-11-21T18:18:43.072Z",
-        "publishedAt": "2022-11-21T18:18:42.942Z",
         "present": false
       }
     },
@@ -51,9 +45,6 @@
         },
         "company": "View",
         "company_url": "https://portfolio-jordi.s3.amazonaws.com/Certificate+BioMedTech+Baja+Hackathon+-+Jordi+Espinoza.pdf",
-        "createdAt": "2022-11-22T03:19:10.660Z",
-        "updatedAt": "2022-11-22T03:49:04.860Z",
-        "publishedAt": "2022-11-22T03:19:13.440Z",
         "present": false
       }
     },
@@ -70,9 +61,6 @@
         },
         "company": "GitHub",
         "company_url": "https://github.com",
-        "createdAt": "2022-11-21T09:45:38.545Z",
-        "updatedAt": "2022-11-21T18:15:39.324Z",
-        "publishedAt": "2022-11-21T09:45:41.641Z",
         "present": true
       }
     },
@@ -89,9 +77,6 @@
         },
         "company": "Odessa Turismo",
         "company_url": "https://www.odessaturismo.com",
-        "createdAt": "2022-11-22T03:53:23.605Z",
-        "updatedAt": "2022-11-22T03:53:26.596Z",
-        "publishedAt": "2022-11-22T03:53:26.466Z",
         "present": null
       }
     },
@@ -108,10 +93,23 @@
         },
         "company": "HackademyMx",
         "company_url": "https://hackademy.lat",
-        "createdAt": "2022-11-21T09:41:21.959Z",
-        "updatedAt": "2023-01-05T04:19:56.146Z",
-        "publishedAt": "2022-11-21T09:41:24.923Z",
         "present": false
+      }
+    },
+    {
+      "id": 7,
+      "attributes": {
+        "title": "Full Stack Developer",
+        "title_en": "Full Stack Developer",
+        "description": "Trabajo como desarrollador Full Stack en la empresa, desarrollando aplicaciones con el stack MERN, así como otras tecnologías como AWS, Bitbucket, Git, etc.",
+        "description_en": "I work as a Full Stack developer in the company, developing applications with the MERN stack, as well as other technologies like AWS, Bitbucket, Git, etc.",
+        "time_data": {
+          "start": { "year": "2023", "month": "1" },
+          "end": { "year": "2023", "month": "1" }
+        },
+        "company": "ITjuana",
+        "company_url": "https://itjuana.com",
+        "present": true
       }
     }
   ]
