@@ -1,11 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { formatLanguageText, TextComponent } from "components";
 import { PageContainer } from "components/containers";
 import { HeaderComponent } from "components/header";
 import { Section } from "components/sections";
 import { SkillSet } from "components/skillset";
 import { useLanguage } from "hooks";
-import { getAPIServerSideProps } from "utils/api";
 import en from "utils/locales/home/en.json";
 import es from "utils/locales/home/es.json";
 import styles from "../styles/Home.module.sass";
@@ -14,6 +13,13 @@ import { ExperienceCard } from "components/cards/experience";
 import { EducationCard } from "components/cards/education";
 import { ProjectCard } from "components/cards/projects";
 import { Modal } from "components/modal";
+
+import skillset from "data/skillset.json";
+import experience from "data/experience.json";
+import education from "data/education.json";
+import projects from "data/projects.json";
+import about from "data/about.json";
+
 const Container = styled.div`
   .experience,
   .education {
@@ -31,34 +37,15 @@ const Container = styled.div`
     }
   }
 `;
-export default function Home(props) {
-  const { skillset, experience, education, projects, about } = props;
-  const { data: dataSkillset, error: errorSkillset } = skillset || {
-    data: null,
-    error: true,
-  };
-  const { data: dataExperience, error: errorExperience } = experience || {
-    data: null,
-    error: true,
-  };
-  const { data: dataEducation, error: errorEducation } = education || {
-    data: null,
-    error: true,
-  };
-  const { data: dataProjects, error: errorProjects } = projects || {
-    data: null,
-    error: true,
-  };
-  const { data: dataAbout, error: errorAbout } = about || {
-    data: null,
-    error: true,
-  };
+export default function Home() {
   const { t, language } = useLanguage({ es, en });
   const [selectedProject, setSelectedProject] = useState(null);
+
+  console.log(skillset, experience, education, projects, about);
   return (
     <PageContainer title={t.title} description={t.description}>
       <div className={styles.container}>
-        <HeaderComponent data={dataAbout} error={errorAbout} />
+        <HeaderComponent data={about} />
       </div>
       <div className={styles.about}>
         <Section
@@ -68,15 +55,11 @@ export default function Home(props) {
           background="primary"
         >
           <TextComponent
-            locales={
-              dataAbout && dataAbout.data?.attributes && !errorAbout
-                ? formatLanguageText({
-                    language,
-                    en: dataAbout.data?.attributes?.description_en,
-                    es: dataAbout.data?.attributes?.description,
-                  })
-                : t.description
-            }
+            locales={formatLanguageText({
+              language,
+              en: about.data?.attributes?.description_en,
+              es: about.data?.attributes?.description,
+            })}
             type="p"
           />
           <TextComponent
@@ -84,9 +67,7 @@ export default function Home(props) {
             type="p"
             modifiers={["tertiaryColor"]}
           />
-          {!errorSkillset && dataSkillset && dataSkillset.data?.attributes && (
-            <SkillSet data={dataSkillset.data.attributes?.data.data} />
-          )}
+          <SkillSet data={skillset.data.attributes?.data.data} />
         </Section>
       </div>
       <Container>
@@ -99,13 +80,11 @@ export default function Home(props) {
             />
             <TextComponent type="p" locales={t.experience.description} />
           </div>
-          {!errorExperience && dataExperience && dataExperience.data && (
-            <div className={styles.experience__content}>
-              {dataExperience?.data.map((item, index) => (
-                <ExperienceCard key={index} data={item?.attributes} />
-              ))}
-            </div>
-          )}
+          <div className={styles.experience__content}>
+            {experience?.data.map((item, index) => (
+              <ExperienceCard key={index} data={item?.attributes} />
+            ))}
+          </div>
         </div>
         <div className={`${styles.education} education`}>
           <div className={styles.education__title}>
@@ -115,13 +94,11 @@ export default function Home(props) {
               modifiers={["tertiaryColor"]}
             />
           </div>
-          {!errorEducation && dataEducation && dataEducation?.data && (
-            <div className={styles.experience__content}>
-              {dataEducation?.data.map((item, index) => (
-                <EducationCard key={index} data={item?.attributes} />
-              ))}
-            </div>
-          )}
+          <div className={styles.experience__content}>
+            {education?.data.map((item, index) => (
+              <EducationCard key={index} data={item?.attributes} />
+            ))}
+          </div>
         </div>
         <div className={`${styles.projects} projects`}>
           <div className={styles.projects__title}>
@@ -131,19 +108,17 @@ export default function Home(props) {
               modifiers={["tertiaryColor"]}
             />
           </div>
-          {!errorProjects && dataProjects && dataProjects.data && (
-            <div className={styles.projects__content}>
-              {dataProjects.data
-                .sort((a, b) => b.attributes?.featured - a.attributes?.featured)
-                .map((item, index) => (
-                  <ProjectCard
-                    key={index}
-                    data={item?.attributes}
-                    onClick={(data) => setSelectedProject(data)}
-                  />
-                ))}
-            </div>
-          )}
+          <div className={styles.projects__content}>
+            {projects.data
+              .sort((a, b) => b.attributes?.featured - a.attributes?.featured)
+              .map((item, index) => (
+                <ProjectCard
+                  key={index}
+                  data={item?.attributes}
+                  onClick={(data) => setSelectedProject(data)}
+                />
+              ))}
+          </div>
           <Modal
             show={selectedProject}
             title={formatLanguageText({
@@ -190,31 +165,4 @@ export default function Home(props) {
       </Container>
     </PageContainer>
   );
-}
-export async function getServerSideProps() {
-  const skillset = await getAPIServerSideProps({
-    url: "/api/skillset",
-  });
-  const experience = await getAPIServerSideProps({
-    url: "/api/experiences",
-  });
-  const education = await getAPIServerSideProps({
-    url: "/api/educations",
-  });
-  const projects = await getAPIServerSideProps({
-    url: "/api/projects",
-  });
-  const about = await getAPIServerSideProps({
-    url: "/api/about",
-  });
-  return {
-    props: {
-      skillset,
-      experience,
-      education,
-      projects,
-      about,
-      test: process.env.API_URL
-    },
-  };
 }

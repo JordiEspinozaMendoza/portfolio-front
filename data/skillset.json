@@ -1,0 +1,117 @@
+{
+  "data": {
+    "attributes": {
+      "data": {
+        "data": [
+          {
+            "icon": "DiReact",
+            "link": "https://reactjs.org/",
+            "name": "React"
+          },
+          {
+            "icon": "AiFillHtml5",
+            "link": "https://www.w3.org/html/",
+            "name": "HTML5"
+          },
+          {
+            "icon": "IoLogoJavascript",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+            "name": "JavaScript"
+          },
+          {
+            "icon": "DiPython",
+            "link": "https://www.python.org/",
+            "name": "Python"
+          },
+          {
+            "icon": "DiDjango",
+            "link": "https://www.djangoproject.com/",
+            "name": "Django"
+          },
+          { "icon": "DiScrum", "link": "https://scrum.org/", "name": "SCRUM" },
+          {
+            "icon": "SiVisualstudiocode",
+            "link": "https://code.visualstudio.com/",
+            "name": "VS Code"
+          },
+          { "icon": "DiGit", "link": "https://git-scm.com/", "name": "Git" },
+          {
+            "icon": "AiFillGithub",
+            "link": "https://github.com",
+            "name": "GitHub"
+          },
+          {
+            "icon": "DiHeroku",
+            "link": "https://www.heroku.com/",
+            "name": "Heroku"
+          },
+          {
+            "icon": "DiCss3",
+            "link": "https://www.w3.org/Style/CSS/",
+            "name": "CSS3"
+          },
+          {
+            "icon": "DiSass",
+            "link": "https://sass-lang.com/",
+            "name": "SCSS"
+          },
+          { "icon": "SiStrapi", "link": "https://strapi.io", "name": "Strapi" },
+          {
+            "icon": "BsFillBootstrapFill",
+            "link": "https://getbootstrap.com/",
+            "name": "Bootstrap"
+          },
+          {
+            "icon": "VscAzure",
+            "link": "https://azure.microsoft.com/en-us/",
+            "name": "Azure"
+          },
+          {
+            "icon": "SiPostgresql",
+            "link": "https://www.postgresql.org/",
+            "name": "PostgreSQL"
+          },
+          {
+            "icon": "SiStyledcomponents",
+            "link": "https://styled-components.com/",
+            "name": "Styled Components"
+          },
+          {
+            "icon": "SiRedux",
+            "link": "https://redux.js.org/",
+            "name": "Redux"
+          },
+          {
+            "icon": "SiPostman",
+            "link": "https://www.getpostman.com/",
+            "name": "Postman"
+          },
+          {
+            "icon": "FaCcStripe",
+            "link": "https://stripe.com",
+            "name": "Stripe"
+          },
+          { "icon": "FaVuejs", "link": "https://vuejs.org", "name": "Vue js" },
+          {
+            "icon": "GrNode",
+            "link": "https://nodejs.org/en/",
+            "name": "Node js"
+          },
+          {
+            "icon": "SiNextdotjs",
+            "link": "https://nextjs.org",
+            "name": "Next js"
+          },
+          {
+            "icon": "GrGraphQl",
+            "link": "https://graphql.org",
+            "name": "Graphql"
+          }
+        ]
+      },
+      "createdAt": "2022-11-21T07:31:36.102Z",
+      "updatedAt": "2022-12-30T01:54:22.997Z",
+      "publishedAt": "2022-11-21T07:31:39.185Z"
+    }
+  }
+}
