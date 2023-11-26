@@ -10,8 +10,8 @@ export const ProjectCard = ({ data, onClick }) => {
         <Image
           src={image_url}
           alt={name_en}
-          width={300}
-          height={300}
+          width={400}
+          height={400}
           quality={100}
         />
       </div>

@@ -1,8 +1,7 @@
 import Link from "next/link";
 import styles from "./styles.module.sass";
 import Icon from "components/icon";
-import { useRouter } from "next/router";
-import { socialLinks } from "utils/seo/settings";
+import { socialLinks } from "constants";
 
 export const Navbar = () => {
   return (
@@ -13,18 +12,16 @@ export const Navbar = () => {
         </div>
         <div className={styles.navbar__right}>
           <div className={styles.navbar__links}>
-            <Icon
-              nameIcon="AiFillGithub"
-              onClick={() => window.open(socialLinks.github, "_blank")}
-            />
-            <Icon
-              nameIcon="AiFillLinkedin"
-              onClick={() => window.open(socialLinks.linkedin, "_blank")}
-            />
-            <Icon
-              nameIcon="AiFillTwitterCircle"
-              onClick={() => window.open(socialLinks.twitter, "_blank")}
-            />
+            <Link href={socialLinks.github}>
+              <Icon nameIcon="AiFillGithub" />
+            </Link>
+            <Link href={socialLinks.linkedin}>
+              <Icon nameIcon="AiFillLinkedin" />
+            </Link>
+
+            <Link href={socialLinks.twitter}>
+              <Icon nameIcon="AiFillTwitterCircle" />
+            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
+import { socialLinks } from "constants";
 import styles from "./styles.module.sass";
 import Icon from "components/icon";
-import { socialLinks } from "utils/seo/settings";
 
 export const Footer = () => {
   return (
