@@ -32,13 +32,38 @@ a {
   box-sizing: border-box;
 }
 
-.loader__page,
-.error__page {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
+
+.btn-primary {
+  background-color: #ffc300;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #ffbb00;
+}
+
+.btn-secondary {
+  background-color: #0B090A;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #0A0809;
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {

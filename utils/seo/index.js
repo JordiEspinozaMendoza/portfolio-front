@@ -1,6 +1,6 @@
 import Head from "next/head";
 import PropTypes from "prop-types";
-import React from "react";
+
 import settings, { rootDescription, rootTitle, rootUrl } from "./settings";
 const socialTags = ({
   type,

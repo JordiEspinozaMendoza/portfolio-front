@@ -1,28 +1,15 @@
-import React from "react";
 import styles from "./styles.module.sass";
-import styled from "styled-components";
-import { TextComponent } from "components/texts";
-import { useLanguage } from "hooks";
-const Container = styled.div`
-  background-color: ${(props) => props.theme.card.background};
-  border: ${(props) => props.theme.card.border};
-`;
+import Link from "next/link";
+
 export const EducationCard = ({ data }) => {
-  const { language } = useLanguage({ es: {}, en: {} });
-  const {
-    title,
-    title_en,
-    description,
-    description_en,
-    time_data,
-    item_url,
-    present,
-  } = data;
+  const { title_en, description_en, time_data, item_url, present } = data;
+
   const handleGetTime = () => {
     const { start, end } = time_data;
     const { year: startYear, month: startMonth } = start;
     const { year: endYear, month: endMonth } = end;
-    // return with language
+    const language = "en";
+
     const startDate = `${new Date(startYear, startMonth).toLocaleString(
       language,
       { month: "long" }
@@ -30,50 +17,28 @@ export const EducationCard = ({ data }) => {
     const endDate = `${new Date(endYear, endMonth).toLocaleString(language, {
       month: "long",
     })} ${endYear}`;
+
     if (present) {
-      let text = language === "es" ? "Actualidad" : "Present";
-      return `${startDate} - ${text}`;
+      return `${startDate} - Present`;
     }
+
     return `${startDate} - ${endDate}`;
   };
+
   return (
-    <Container className={styles.education__card}>
+    <div className={styles.education__card}>
       <div className={styles.education__card__title}>
-        <TextComponent
-          text={{
-            en: title_en,
-            es: title,
-          }}
-          type="h3"
-          modifiers={["tertiaryColor"]}
-        />
-        <TextComponent
-          text={handleGetTime()}
-          type="p"
-          disableLocales
-          className={styles.education__card__title__time}
-        />
+        <h3>{title_en}</h3>
+        <p className={styles.education__card__title__time}>{handleGetTime()}</p>
         {item_url && (
-          <TextComponent
-            text={{
-              en: "View",
-              es: "Ver",
-            }}
-            type="p"
-            className={styles.education__card__title__link}
-            onClick={() => window.open(item_url, "_blank")}
-          />
+          <Link href={item_url} className={styles.education__card__title__link}>
+            View
+          </Link>
         )}
       </div>
       <div className={styles.education__card__description}>
-        <TextComponent
-          text={{
-            en: description_en,
-            es: description,
-          }}
-          type="p"
-        />
+        <p>{description_en}</p>
       </div>
-    </Container>
+    </div>
   );
 };
