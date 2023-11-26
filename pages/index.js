@@ -34,7 +34,7 @@ export default function Home() {
 
       <div className={styles.projects}>
         <h2>Projects</h2>
-        <div className={styles.projects__content}>
+        <div className={styles.list__cards}>
           {projects.data
             .sort((a, b) => b.attributes.featured - a.attributes.featured)
             .map((item, index) => (

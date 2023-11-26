@@ -24,13 +24,17 @@
     gap: 2rem
     padding: 2rem
 
-.list__cards, .projects__content
+.list__cards
     display: grid
     grid-template-columns: 1fr 1fr
     gap: 2rem
 
 @media screen and (max-width:$medium)
-    .projects__content
+    .list__cards
         grid-template-columns: 1fr
 
-@media screen and (max-width:$xs)
+    .about
+        grid-template-columns: 1fr
+        .about__text
+            padding: 1rem
+            font-size: 0.9rem
