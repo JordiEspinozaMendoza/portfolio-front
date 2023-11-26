@@ -1,5 +1,6 @@
 import styles from "./styles.module.sass";
 import Link from "next/link";
+import Image from "next/image";
 
 export const HeaderComponent = ({ data }) => {
   const { attributes } = data.data || {};
@@ -30,10 +31,12 @@ export const HeaderComponent = ({ data }) => {
         </div>
       </div>
       <div className={styles.header__avatar}>
-        <img
+        <Image
           src="https://portfolio-jordi.s3.amazonaws.com/hackmty.jpeg"
           alt="Jordi Espinoza"
           className={styles.header__avatar__image}
+          width={400}
+          height={400}
         />
       </div>
     </div>

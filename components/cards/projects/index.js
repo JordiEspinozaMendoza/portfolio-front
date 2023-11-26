@@ -1,4 +1,5 @@
 import styles from "./styles.module.sass";
+import Image from "next/image";
 
 export const ProjectCard = ({ data, onClick }) => {
   const { name_en, image_url, tags, description_en } = data;
@@ -6,7 +7,13 @@ export const ProjectCard = ({ data, onClick }) => {
   return (
     <div className={styles.project__card}>
       <div className={styles.project__card__image}>
-        <img src={image_url} alt={name_en} />
+        <Image
+          src={image_url}
+          alt={name_en}
+          width={300}
+          height={300}
+          quality={100}
+        />
       </div>
       <div className={styles.project__card__text}>
         <h3>{name_en}</h3>

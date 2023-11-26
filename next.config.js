@@ -9,6 +9,14 @@ const nextConfig = {
   experimental: {
     styledComponents: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "portfolio-jordi.s3.amazonaws.com",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

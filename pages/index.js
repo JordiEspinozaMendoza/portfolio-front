@@ -1,5 +1,6 @@
 import { HeaderComponent } from "components/header";
 import styles from "../styles/Home.module.sass";
+import Image from "next/image";
 
 import skillset from "data/skillset.json";
 import experience from "data/experience.json";
@@ -19,9 +20,11 @@ export default function Home() {
       </div>
       <div className={styles.about}>
         <div className={styles.about__image}>
-          <img
+          <Image
             src="https://portfolio-jordi.s3.amazonaws.com/_DSC4508.JPG"
             alt="Jordi Espinoza"
+            width={400}
+            height={400}
           />
         </div>
 
