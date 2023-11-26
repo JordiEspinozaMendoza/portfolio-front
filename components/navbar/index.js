@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./styles.module.sass";
 import Icon from "components/icon";
-import { socialLinks } from "constants";
+import { socialLinks } from "../../constants";
 
 export const Navbar = () => {
   return (
