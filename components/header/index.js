@@ -14,11 +14,9 @@ export const HeaderComponent = ({ data }) => {
             <p>{attributes?.header_subtitle_en}</p>
           </div>
           <div className={styles.header__buttons}>
-            <button className="btn btn-primary">
-              <Link href={attributes?.cv_url} passHref={true}>
-                View CV
-              </Link>
-            </button>
+            <Link href={attributes?.cv_url} passHref={true}>
+              <button className="btn btn-primary">View CV</button>
+            </Link>
             <button className="btn btn-secondary">
               <Link
                 href={`mailto:${attributes?.email_contact}?subject=Hello%20Jordi%20Espinoza`}
