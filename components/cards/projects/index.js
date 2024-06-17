@@ -20,7 +20,7 @@ export const ProjectCard = ({ data, onClick }) => {
 
         {tags?.data?.length > 0 && (
           <div className={styles.project__card__text__tags}>
-            <p>Tags: </p>
+            <p>Tools: </p>
             <div className={styles.project__card__text__tags__list}>
               {tags.data.map((tag, index) => (
                 <p

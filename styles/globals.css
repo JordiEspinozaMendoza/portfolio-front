@@ -71,7 +71,18 @@ button {
   }
 
   body {
-    color: white;
+    color: #fff;
     background: black;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    color: #fff;
+    background: white;
   }
 }
