@@ -17,14 +17,12 @@ export const HeaderComponent = ({ data }) => {
             <Link href={attributes?.cv_url} passHref={true}>
               <button className="btn btn-primary">View CV</button>
             </Link>
-            <button className="btn btn-secondary">
-              <Link
-                href={`mailto:${attributes?.email_contact}?subject=Hello%20Jordi%20Espinoza`}
-                passHref={true}
-              >
-                Contact
-              </Link>
-            </button>
+            <Link
+              href={`mailto:${attributes?.email_contact}?subject=Hello%20Jordi%20Espinoza`}
+              passHref={true}
+            >
+              <button className="btn btn-secondary">Contact</button>
+            </Link>
           </div>
         </div>
       </div>
