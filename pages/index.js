@@ -18,7 +18,7 @@ export default function Home() {
       <div className={styles.container}>
         <HeaderComponent data={about} />
       </div>
-      <div className={styles.about}>
+      <div className={styles.about} id="about">
         <div className={styles.about__image}>
           <Image
             src="https://portfolio-jordi.s3.amazonaws.com/_DSC4508.JPG"
@@ -35,7 +35,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.projects}>
+      <div className={styles.projects} id="projects">
         <h2>Projects</h2>
         <div className={styles.list__cards}>
           {projects.data
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.experience}>
+      <div className={styles.experience} id="experience">
         <h2>Experience</h2>
         <div className={styles.list__cards}>
           {experience?.data.map((item, index) => (
@@ -55,7 +55,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.education}>
+      <div className={styles.education} id="education">
         <h2>Education and Certifications</h2>
         <div className={styles.list__cards}>
           {education?.data.map((item, index) => (

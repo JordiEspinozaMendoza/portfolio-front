@@ -42,16 +42,16 @@
         "title": "Ingenieria en sistemas computacionales",
         "title_en": "Computer Systems engineer",
         "description": "Soy estudiante en el Instituto tecnológico de Tijuana.",
-        "description_en": "I am a student at Instituto tecnológico de Tijuana.",
+        "description_en": "Former student at the Instituto Tecnológico de Tijuana.",
         "item_url": "https://www.tijuana.tecnm.mx",
         "time_data": {
-          "end": { "year": "2023", "month": "11" },
+          "end": { "year": "2024", "month": "4" },
           "start": { "year": "2019", "month": "8" }
         },
         "createdAt": "2022-11-21T18:45:46.733Z",
         "updatedAt": "2022-11-21T18:54:07.344Z",
         "publishedAt": "2022-11-21T18:46:00.787Z",
-        "present": true
+        "present": false
       }
     },
     {
