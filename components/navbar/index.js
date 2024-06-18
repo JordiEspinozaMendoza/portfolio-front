@@ -12,7 +12,6 @@ export const Navbar = () => {
         </div>
         <div className={styles.navbar__right}>
           <div className={styles.navbar__sections}>
-            <Link href="/#about">About</Link>
             <Link href="/#projects">Projects</Link>
             <Link href="/#experience">Experience</Link>
             <Link href="/#education">Education</Link>
