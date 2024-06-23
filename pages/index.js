@@ -38,6 +38,15 @@ export default function Home() {
         </div>
       </div>
 
+      <div className={styles.experience} id="experience">
+        <h2>Experience</h2>
+        <div className={styles.list__cards}>
+          {experience?.data.map((item, index) => (
+            <ExperienceCard key={index} data={item?.attributes} />
+          ))}
+        </div>
+      </div>
+
       <div className={styles.projects} id="projects">
         <h2>Projects</h2>
         <div className={styles.list__cards}>
@@ -46,15 +55,6 @@ export default function Home() {
             .map((item, index) => (
               <ProjectCard key={index} data={item?.attributes} />
             ))}
-        </div>
-      </div>
-
-      <div className={styles.experience} id="experience">
-        <h2>Experience</h2>
-        <div className={styles.list__cards}>
-          {experience?.data.map((item, index) => (
-            <ExperienceCard key={index} data={item?.attributes} />
-          ))}
         </div>
       </div>
 

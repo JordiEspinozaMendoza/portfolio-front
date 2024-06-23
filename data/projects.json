@@ -213,6 +213,18 @@
         },
         "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2024-06-23+at+3.43.47%E2%80%AFp.m..png"
       }
+    },
+    {
+      "id": "8",
+      "attributes": {
+        "name_en": "Interview.io",
+        "description_en": "Platform that allows you to create and manage interviews, it includes a system to have a real-time conversation with the interviewee.",
+        "featured": false,
+        "tags": {
+          "data": ["React JS", "Angular", "Socket io", "Node js", "Heroku"]
+        },
+        "image_url": "https://portfolio-jordi.s3.amazonaws.com/Screenshot+2024-06-23+at+3.51.48%E2%80%AFp.m..png"
+      }
     }
   ]
 }
