@@ -22,14 +22,16 @@ export const ProjectCard = ({ data, onClick }) => {
           <div className={styles.project__card__text__tags}>
             <p>Tools: </p>
             <div className={styles.project__card__text__tags__list}>
-              {tags.data.map((tag, index) => (
-                <p
-                  className={styles.project__card__text__tags__tag}
-                  key={index}
-                >
-                  {`${tag}${index !== tags.data.length - 1 ? "," : " "}`}
-                </p>
-              ))}
+              {tags.data
+                .sort((a, b) => a > b)
+                .map((tag, index) => (
+                  <p
+                    className={styles.project__card__text__tags__tag}
+                    key={index}
+                  >
+                    {`${tag}${index !== tags.data.length - 1 ? "," : " "}`}
+                  </p>
+                ))}
             </div>
           </div>
         )}

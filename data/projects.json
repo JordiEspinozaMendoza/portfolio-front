@@ -3,9 +3,7 @@
     {
       "id": 5,
       "attributes": {
-        "name": "Consultec",
         "name_en": "Consultec",
-        "description": "Este proyecto permite la comunicación entre varios clientes a través de mensajería instantánea, usando socket.io y React Js en el frontend.",
         "description_en": "This project allows communication between several clients through instant messaging, using socket.io and React Js on the frontend side.",
         "urls": {
           "data": [
@@ -32,7 +30,9 @@
         "createdAt": "2022-11-22T08:15:11.302Z",
         "updatedAt": "2022-11-22T08:15:14.339Z",
         "publishedAt": "2022-11-22T08:15:14.200Z",
-        "tags": { "data": ["React JS", "Socket.io", "Django", "Node js"] }
+        "tags": {
+          "data": ["React JS", "Socket.io", "Django", "Node js", "Heroku"]
+        }
       }
     },
     {
@@ -55,7 +55,7 @@
         "createdAt": "2022-11-22T08:18:25.812Z",
         "updatedAt": "2022-11-22T08:18:28.755Z",
         "publishedAt": "2022-11-22T08:18:28.623Z",
-        "tags": { "data": ["React JS", "Google Maps"] }
+        "tags": { "data": ["React JS", "Google Maps", "Heroku"] }
       }
     },
     {
@@ -82,7 +82,11 @@
             "Django",
             "Python",
             "Google Maps",
-            "Socket io"
+            "Socket io",
+            "AWS S3",
+            "Heroku",
+            "PostgreSQL",
+            "Aws RDS"
           ]
         }
       }
@@ -102,7 +106,19 @@
         "createdAt": "2022-11-21T09:43:01.509Z",
         "updatedAt": "2022-11-21T18:33:31.705Z",
         "publishedAt": "2022-11-21T09:43:04.584Z",
-        "tags": { "data": ["React JS", "Web", "Django", "Python"] }
+        "tags": {
+          "data": [
+            "React JS",
+            "Web",
+            "Django",
+            "Python",
+            "AWS S3",
+            "Heroku",
+            "PostgreSQL",
+            "AWS RDS",
+            "Stripe"
+          ]
+        }
       }
     },
     {
@@ -162,7 +178,40 @@
         "description_en": "The Code Interview Assistant is a powerful web application designed to improve the recruiting process of a software development company. It uses the OpenAI API to provide real-time support to both interviewers and interviewees during the process. This tool helps streamline the interview process by offering dynamic feedback on code quality, logic, and syntax without revealing answers.",
         "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/270161799-dfb3f569-c691-4038-a8d9-4ed804b72744.png",
         "featured": true,
-        "tags": { "data": ["React JS", "OpenAI", "Web"] }
+        "tags": { "data": ["React JS", "OpenAI", "Socket io"] }
+      }
+    },
+    {
+      "id": 6,
+      "attributes": {
+        "name_en": "miCoach",
+        "description_en": "I work as a Software Engineer in a project called miCoach, specializing in the MERN (Mongo, Express, React, Node) stack and using AWS, Bitbucket, Git, Jest, WordPress, and other technologies to develop robust applications. I implemented server side and client side rendering in this project to have a hybrid implementation.",
+        "featured": true,
+        "tags": {
+          "data": [
+            "React JS",
+            "Next JS",
+            "MERN",
+            "AWS",
+            "Bitbucket",
+            "Git",
+            "Jest",
+            "MongoDB"
+          ]
+        },
+        "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2024-06-23+at+3.40.10%E2%80%AFp.m..png"
+      }
+    },
+    {
+      "id": "7",
+      "attributes": {
+        "name_en": "ITJ Library",
+        "description_en": "Web application developed with Next JS and Prisma ORM, it helps to manage the library of the organization.",
+        "featured": false,
+        "tags": {
+          "data": ["Next JS", "Prisma", "PostgreSQL", "Heroku", "Auth0"]
+        },
+        "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2024-06-23+at+3.43.47%E2%80%AFp.m..png"
       }
     }
   ]

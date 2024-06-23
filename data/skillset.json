@@ -29,11 +29,6 @@
             "name": "Django"
           },
           { "icon": "DiScrum", "link": "https://scrum.org/", "name": "SCRUM" },
-          {
-            "icon": "SiVisualstudiocode",
-            "link": "https://code.visualstudio.com/",
-            "name": "VS Code"
-          },
           { "icon": "DiGit", "link": "https://git-scm.com/", "name": "Git" },
           {
             "icon": "AiFillGithub",
@@ -46,6 +41,11 @@
             "name": "Heroku"
           },
           {
+            "icon": "SiAngular",
+            "link": "https://angular.io/",
+            "name": "Angular"
+          },
+          {
             "icon": "DiCss3",
             "link": "https://www.w3.org/Style/CSS/",
             "name": "CSS3"
@@ -55,7 +55,6 @@
             "link": "https://sass-lang.com/",
             "name": "SCSS"
           },
-          { "icon": "SiStrapi", "link": "https://strapi.io", "name": "Strapi" },
           {
             "icon": "BsFillBootstrapFill",
             "link": "https://getbootstrap.com/",
@@ -70,16 +69,6 @@
             "icon": "SiPostgresql",
             "link": "https://www.postgresql.org/",
             "name": "PostgreSQL"
-          },
-          {
-            "icon": "SiStyledcomponents",
-            "link": "https://styled-components.com/",
-            "name": "Styled Components"
-          },
-          {
-            "icon": "SiRedux",
-            "link": "https://redux.js.org/",
-            "name": "Redux"
           },
           {
             "icon": "SiPostman",
@@ -103,9 +92,64 @@
             "name": "Next js"
           },
           {
+            "icon": "SiTypescript",
+            "link": "https://www.typescriptlang.org/",
+            "name": "Typescript"
+          },
+          {
+            "link": "https://jestjs.io",
+            "icon": "SiJest",
+            "name": "Jest"
+          },
+          {
+            "icon": "SiSpring",
+            "link": "https://spring.io/projects/spring-boot",
+            "name": "Spring Boot"
+          },
+          {
+            "icon": "SiJava",
+            "link": "https://www.java.com",
+            "name": "Java"
+          },
+          {
             "icon": "GrGraphQl",
             "link": "https://graphql.org",
             "name": "Graphql"
+          },
+          {
+            "icon": "SiMongodb",
+            "link": "https://www.mongodb.com",
+            "name": "MongoDB"
+          },
+          {
+            "icon": "SiDocker",
+            "link": "https://www.docker.com",
+            "name": "Docker"
+          },
+          {
+            "name": "AWS",
+            "link": "https://aws.amazon.com",
+            "icon": "SiAmazonaws"
+          },
+          {
+            "name": "Flask",
+            "link": "https://flask.palletsprojects.com",
+            "icon": "SiFlask"
+          },
+          {
+            "name": "FastAPI",
+            "link": "https://fastapi.tiangolo.com",
+            "icon": "SiFastapi"
+          },
+          {
+            "name": "C#",
+            "link": "https://docs.microsoft.com/en-us/dotnet/csharp",
+            "icon": "SiCsharp"
+          },
+          {
+            "name": "Auth0",
+            "link": "https://auth0.com",
+            "icon": "SiAuth0"
           }
         ]
       },

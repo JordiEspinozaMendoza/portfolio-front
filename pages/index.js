@@ -31,6 +31,9 @@ export default function Home() {
         <div className={styles.about__text}>
           <h2>About me</h2>
           <p>{about.data.attributes.description_en}</p>
+          <p>
+            Some of the technologies and tools that I have worked with are:{" "}
+          </p>
           <SkillSet data={skillset.data.attributes.data.data} />
         </div>
       </div>
