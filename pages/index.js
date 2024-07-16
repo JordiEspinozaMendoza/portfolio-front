@@ -29,10 +29,10 @@ export default function Home() {
           />
         </div>
 
-        <div className="p-8 lg:p-4">
-          <h2>About me</h2>
-          <p>{about.description}</p>
-          <p>
+        <div className="p-8 lg:p-4 flex flex-col gap-2 justify-center">
+          <h2 className="text-2xl">About me</h2>
+          <p className="text-sm">{about.description}</p>
+          <p className="text-sm mb-4">
             Some of the technologies and tools that I have worked with are:{" "}
           </p>
           <SkillSet data={skillset.data} />
@@ -40,8 +40,8 @@ export default function Home() {
       </div>
 
       <div className="bg-[#000814] p-8 flex flex-col gap-8" id="experience">
-        <h2>Experience</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <h2 className="text-2xl">Experience</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {experience?.data.map((item, index) => (
             <ExperienceCard key={index} data={item} />
           ))}
@@ -49,8 +49,8 @@ export default function Home() {
       </div>
 
       <div className="bg-[#000814] p-8 flex flex-col gap-8" id="projects">
-        <h2>Projects</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <h2 className="text-2xl">Projects</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {projects.data
             .sort((a, b) => b.featured - a.featured)
             .map((item, index) => (
@@ -60,8 +60,8 @@ export default function Home() {
       </div>
 
       <div className="bg-[#003566] p-8 flex flex-col gap-8" id="education">
-        <h2>Education and Certifications</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <h2 className="text-2xl">Education and Certifications</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {education?.data.map((item, index) => (
             <EducationCard key={index} data={item} />
           ))}

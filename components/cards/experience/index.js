@@ -10,11 +10,11 @@ export const ExperienceCard = ({ data }) => {
         <h3>{title}</h3>
         <Link
           href={company_url}
-          className="text-blue-500 underline hover:text-blue-700"
+          className="text-blue-500 underline hover:text-blue-700 w-fit"
         >
           {company}
         </Link>
-        <p className="text-gray-500">{handleGetTime(time_data, present)}</p>
+        <p className="text-gray-400 text-sm">{handleGetTime(time_data, present)}</p>
       </div>
       <div className="text-sm">
         <p>{description}</p>

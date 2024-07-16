@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 
 html,
 body {
@@ -13,8 +13,7 @@ body {
 p,
 span,
 a {
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 400;
+  font-family: "Montserrat", system-ui;
 }
 
 h1,
@@ -23,8 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 600;
+  font-family: "Montserrat", system-ui;
 }
 
 a {
@@ -44,7 +42,7 @@ button {
   background: #000;
   color: #fff;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
 }
@@ -59,15 +57,14 @@ button {
 }
 
 .btn-secondary {
-  background-color: #0B090A;
+  background-color: #0b090a;
   color: #fff;
   border: 1px solid #fff;
 }
 
 .btn-secondary:hover {
-  background-color: #0A0809;
+  background-color: #0a0809;
 }
-
 
 @media (prefers-color-scheme: dark) {
   html {

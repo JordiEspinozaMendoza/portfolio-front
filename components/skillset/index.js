@@ -2,7 +2,7 @@ import Icon from "components/icon";
 
 export const SkillSet = ({ data }) => {
   return (
-    <div className="grid grid-cols-[repeat(auto-fill,minmax(120px,1fr))] gap-2">
+    <div className="grid grid-cols-[repeat(auto-fill,minmax(120px,1fr))] gap-3">
       {data
         .sort((a, b) => b.name < a.name)
         .map((item, index) => (
@@ -15,7 +15,7 @@ export const SkillSet = ({ data }) => {
             >
               <Icon nameIcon={item.icon} className="w-4 h-4" />
             </a>
-            <p className="text-xs m-0">{item.name}</p>
+            <p className="text-sm m-0">{item.name}</p>
           </div>
         ))}
     </div>

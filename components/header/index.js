@@ -37,7 +37,7 @@ export const HeaderComponent = ({ data }) => {
           alt="Jordi Espinoza"
           width={400}
           height={400}
-          className="object-cover"
+          className="object-cover w-full h-full"
         />
       </div>
     </div>
