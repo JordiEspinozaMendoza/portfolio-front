@@ -1,35 +1,39 @@
 import Link from "next/link";
-import styles from "./styles.module.sass";
 import Icon from "components/icon";
 import { socialLinks } from "../../constants";
 
 export const Navbar = () => {
   return (
-    <navbar className={styles.navbar}>
-      <div className={styles.navbar__content}>
-        <div className={styles.navbar__left}>
+    <nav className="block sticky top-0 z-100 bg-[#001d3d] p-2.5">
+      <div className="flex justify-between items-center">
+        <div className="hover:cursor-pointer">
           <Link href="/">Jordi Espinoza</Link>
         </div>
-        <div className={styles.navbar__right}>
-          <div className={styles.navbar__sections}>
+        <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-4 text-sm sm:text-xs md:text-sm">
             <Link href="/#projects">Projects</Link>
             <Link href="/#experience">Experience</Link>
             <Link href="/#education">Education</Link>
           </div>
-          <div className={styles.navbar__links}>
-            <Link href={socialLinks.github}>
-              <Icon nameIcon="AiFillGithub" />
+          <div className="flex items-center space-x-2">
+            <Link href={socialLinks.github} className="text-xl">
+              <Icon nameIcon="AiFillGithub" className="hover:cursor-pointer" />
             </Link>
-            <Link href={socialLinks.linkedin}>
-              <Icon nameIcon="AiFillLinkedin" />
+            <Link href={socialLinks.linkedin} className="text-xl">
+              <Icon
+                nameIcon="AiFillLinkedin"
+                className="hover:cursor-pointer"
+              />
             </Link>
-
-            <Link href={socialLinks.twitter}>
-              <Icon nameIcon="AiFillTwitterCircle" />
+            <Link href={socialLinks.twitter} className="text-xl">
+              <Icon
+                nameIcon="AiFillTwitterCircle"
+                className="hover:cursor-pointer"
+              />
             </Link>
           </div>
         </div>
       </div>
-    </navbar>
+    </nav>
   );
 };

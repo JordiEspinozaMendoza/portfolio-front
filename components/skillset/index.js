@@ -1,17 +1,21 @@
 import Icon from "components/icon";
-import styles from "./styles.module.sass";
 
 export const SkillSet = ({ data }) => {
   return (
-    <div className={styles.skillset}>
+    <div className="grid grid-cols-[repeat(auto-fill,minmax(120px,1fr))] gap-3">
       {data
         .sort((a, b) => b.name < a.name)
         .map((item, index) => (
-          <div className={styles.skill__item} key={index}>
-            <a href={item.link} target="_blank" rel="noopener noreferrer">
-              <Icon nameIcon={item.icon} />
+          <div className="flex items-center gap-2" key={index}>
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-xl"
+            >
+              <Icon nameIcon={item.icon} className="w-4 h-4" />
             </a>
-            <p>{item.name}</p>
+            <p className="text-sm m-0">{item.name}</p>
           </div>
         ))}
     </div>

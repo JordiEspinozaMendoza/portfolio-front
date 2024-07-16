@@ -17,8 +17,3 @@ Icon.propTypes = {
   nameIcon: PropTypes.string.isRequired,
   onClick: PropTypes.func,
 };
-
-Icon.defaultProps = {
-  nameIcon: "AiOutlineUser",
-  onClick: () => {},
-};
