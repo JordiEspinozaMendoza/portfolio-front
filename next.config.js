@@ -6,8 +6,13 @@ const nextConfig = {
     locales: ["en", "es"],
     defaultLocale: "en",
   },
-  experimental: {
-    styledComponents: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "portfolio-jordi.s3.amazonaws.com",
+      },
+    ],
   },
 };
 

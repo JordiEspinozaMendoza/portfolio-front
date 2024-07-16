@@ -2,115 +2,99 @@
   "data": [
     {
       "id": 6,
-      "attributes": {
-        "title": "Mentor",
-        "title_en": "Mentor",
-        "description": "Participé como mentor en el Programa de Skills For Women In Tech port parte del British Council. El programa se llevó a cabo entre enero y agosto de 2022 y consistió en un mínimo de 12 horas de tutoría.",
-        "description_en": "I participated as a mentor in Skills for Women by the British Council. The program took place between January and August 2022 and consisted of a minimum of 12 hours of tutoring.",
-        "time_data": {
-          "end": { "year": "2022", "month": "6" },
-          "start": { "year": "2021", "month": "8" }
-        },
-        "company": "View",
-        "company_url": "https://portfolio-jordi.s3.amazonaws.com/Jordi+Espinoza+Mendoza.pdf",
-        "present": false
-      }
+      "title": "Mentor",
+      "description": "I participated as a mentor in Skills for Women by the British Council. The program took place between January and August 2022 and consisted of a minimum of 12 hours of tutoring.",
+      "time_data": {
+        "end": { "year": "2022", "month": "6" },
+        "start": { "year": "2021", "month": "8" }
+      },
+      "company": "View",
+      "company_url": "https://portfolio-jordi.s3.amazonaws.com/Jordi+Espinoza+Mendoza.pdf",
+      "present": false
     },
     {
       "id": 3,
-      "attributes": {
-        "title": "Desarrollador Web",
-        "title_en": "Web Developer",
-        "description": "Trabajé como desarrollador web desarrollando la landing page de la empresa, así como su sistema de administración.\nHice cosas como enviar correos electrónicos con AWS, implementar servidores Django con Heroku, bases de datos en AWS y almacenamiento con AWS S3.",
-        "description_en": "I worked as a web developer developing the landing page of the company, as well as its administration system.\nI did things like sending email with AWS, deploying Django servers with Heroku, databases on AWS, and storage with AWS S3.",
-        "time_data": {
-          "end": { "year": "2022", "month": "8" },
-          "start": { "year": "2021", "month": "10" }
-        },
-        "company": "Nación Verde",
-        "company_url": "https://nacionverde.org",
-        "present": false
-      }
+      "title": "Software Developer",
+      "description": "I worked as a software developer developing the landing page of the company, as well as its administration system.\nI did things like sending email with AWS, deploying Django servers with Heroku, databases on AWS, and storage with AWS S3.",
+      "time_data": {
+        "end": { "year": "2022", "month": "8" },
+        "start": { "year": "2021", "month": "10" }
+      },
+      "company": "Nación Verde",
+      "company_url": "https://nacionverde.org",
+      "present": false
     },
     {
       "id": 4,
-      "attributes": {
-        "title": "BioMedTech Baja Hackathon",
-        "title_en": "BioMedTech Baja Hackathon",
-        "description": "Participé en el BioMedTech Baja Hackathon y junto con mi equipo desarrollamos una aplicación tipo Uber para ambulancias, esto con el uso de Flutter y socket.io",
-        "description_en": "I participated in the BioMedTech Baja Hackathon and together with my team we developed an Uber-like application for ambulances, this with the use of Flutter and socket.io",
-        "time_data": {
-          "end": { "year": "2022", "month": "8" },
-          "start": { "year": "2022", "month": "8" }
-        },
-        "company": "View",
-        "company_url": "https://portfolio-jordi.s3.amazonaws.com/Certificate+BioMedTech+Baja+Hackathon+-+Jordi+Espinoza.pdf",
-        "present": false
-      }
+      "title": "BioMedTech Baja Hackathon",
+      "description": "I participated in the BioMedTech Baja Hackathon and together with my team we developed an Uber-like application for ambulances, this with the use of Flutter and socket.io",
+      "time_data": {
+        "end": { "year": "2022", "month": "8" },
+        "start": { "year": "2022", "month": "8" }
+      },
+      "company": "View",
+      "company_url": "https://portfolio-jordi.s3.amazonaws.com/Certificate+BioMedTech+Baja+Hackathon+-+Jordi+Espinoza.pdf",
+      "present": false
     },
     {
       "id": 2,
-      "attributes": {
-        "title": "GitHub Campus Expert",
-        "title_en": "GitHub Campus Expert",
-        "description": "Actualmente pertenezco a la comunidad de expertos del campus de GitHub, donde organizo actividades y eventos para la comunidad escolar en mi campus, así como también asisto a talleres de educación de GitHub para miembros de la comunidad.",
-        "description_en": "I currently belong to the GitHub Campus Experts Community, where I host activities and events for the school community on my campus, as well as attend GitHub Education workshops for community members.",
-        "time_data": {
-          "end": { "year": "2021", "month": "3" },
-          "start": { "year": "2021", "month": "11" }
-        },
-        "company": "GitHub",
-        "company_url": "https://github.com",
-        "present": true
-      }
+      "title": "GitHub Campus Expert",
+      "description": "I currently belong to the GitHub Campus Experts Community, where I host activities and events for the school community on my campus, as well as attend GitHub Education workshops for community members.",
+      "time_data": {
+        "end": { "year": "2021", "month": "3" },
+        "start": { "year": "2021", "month": "11" }
+      },
+      "company": "GitHub",
+      "company_url": "https://github.com",
+      "present": true
     },
     {
       "id": 5,
-      "attributes": {
-        "title": "Web Developer",
-        "title_en": "Web Developer",
-        "description": "Hice cosas como enviar correos electrónicos con AWS, implementar servidores Django con Heroku, bases de datos en AWS y almacenamiento con AWS S3.",
-        "description_en": "I did things like sending email with AWS, deploying Django servers with Heroku, databases on AWS, and storage with AWS S3.",
-        "time_data": {
-          "end": { "year": "2022", "month": "7" },
-          "start": { "year": "2021", "month": "10" }
-        },
-        "company": "Odessa Turismo",
-        "company_url": "https://www.odessaturismo.com",
-        "present": null
-      }
+      "title": "Software Developer",
+      "description": "I did things like sending email with AWS, deploying Django servers with Heroku, databases on AWS, and storage with AWS S3.",
+      "time_data": {
+        "end": { "year": "2022", "month": "7" },
+        "start": { "year": "2021", "month": "10" }
+      },
+      "company": "Odessa Turismo",
+      "company_url": "https://www.odessaturismo.com",
+      "present": null
     },
     {
       "id": 1,
-      "attributes": {
-        "title": "Desarrollador",
-        "title_en": "Developer",
-        "description": "Implementé tecnologías como Web RTC y Sockets para desarrollar aplicaciones en tiempo real. Trabajé con pasarelas de pago como Stripe del lado del cliente (Frontend)\nTrabajo con tecnologías como React JS y Next JS para desarrollar aplicaciones web, así como landing pages con el uso de SSR\nTrabajé con Strapi para desarrollar APIs para ser consumidas por clientes web.",
-        "description_en": "I implemented technologies such as Web RTC and Sockets to develop applications in real time. I worked with payment gateways like Stripe on the client side (Frontend)\nI work with technologies like React JS and Next JS to develop web applications, as well as landing pages with the use of SSR\nI worked with Strapi to develop APIs to be consumed by web clients.",
-        "time_data": {
-          "end": { "year": "2022", "month": "11" },
-          "start": { "year": "2021", "month": "3" }
-        },
-        "company": "HackademyMx",
-        "company_url": "https://hackademy.lat",
-        "present": false
-      }
+      "title": "Software Engineer",
+      "description": "I implemented technologies such as Web RTC and Sockets to develop applications in real time. I worked with payment gateways like Stripe on the client side (Frontend)\nI work with technologies like React JS and Next JS to develop web applications, as well as landing pages with the use of SSR\nI worked with Strapi to develop APIs to be consumed by web clients.",
+      "time_data": {
+        "end": { "year": "2022", "month": "11" },
+        "start": { "year": "2021", "month": "3" }
+      },
+      "company": "HackademyMx",
+      "company_url": "https://hackademy.lat",
+      "present": false
     },
     {
       "id": 7,
-      "attributes": {
-        "title": "Full Stack Developer",
-        "title_en": "Full Stack Developer",
-        "description": "Trabajo como desarrollador Full Stack en la empresa, desarrollando aplicaciones con el stack MERN, así como otras tecnologías como AWS, Bitbucket, Git, etc.",
-        "description_en": "I work as a Full Stack developer in the company, developing applications with the MERN stack, as well as other technologies like AWS, Bitbucket, Git, etc.",
-        "time_data": {
-          "start": { "year": "2023", "month": "1" },
-          "end": { "year": "2023", "month": "1" }
-        },
-        "company": "ITjuana",
-        "company_url": "https://itjuana.com",
-        "present": true
-      }
+      "title": "Software Engineer",
+      "description": "I work as a Software Engineer in the company, developing applications with the MERN stack, as well as other technologies like AWS, Bitbucket, Git, etc.",
+      "time_data": {
+        "start": { "year": "2023", "month": "1" },
+        "end": { "year": "2023", "month": "1" }
+      },
+      "company": "ITjuana",
+      "company_url": "https://itjuana.com",
+      "present": true
+    },
+    {
+      "id": 8,
+      "title": "Data Scientist",
+      "description": "I worked as a Data Scientist in the company, with technologies like Python, Pandas, Numpy, etc.",
+      "time_data": {
+        "start": { "year": "2024", "month": "3" },
+        "end": { "year": "2024", "month": "7" }
+      },
+      "company": "ITjuana",
+      "company_url": "https://itjuana.com",
+      "present": false
     }
   ]
 }

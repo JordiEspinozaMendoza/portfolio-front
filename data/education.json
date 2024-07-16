@@ -2,75 +2,59 @@
   "data": [
     {
       "id": 1,
-      "attributes": {
-        "title": "AZ-900: Aspectos básicos de Microsoft Azure",
-        "title_en": "AZ-900: Microsoft Azure Fundamentals",
-        "description": "Microsoft AZ-900",
-        "description_en": "Microsoft AZ-900",
-        "item_url": "https://portfolio-jordi.s3.amazonaws.com/Azure+Fundamentals.pdf",
-        "time_data": {
-          "end": { "year": "2021", "month": "3" },
-          "start": { "year": "2021", "month": "3" }
-        },
-        "createdAt": "2022-11-21T09:37:57.876Z",
-        "updatedAt": "2022-11-21T18:44:28.611Z",
-        "publishedAt": "2022-11-21T09:38:00.972Z",
-        "present": true
-      }
+      "title": "AZ-900: Microsoft Azure Fundamentals",
+      "description": "Microsoft AZ-900",
+      "item_url": "https://portfolio-jordi.s3.amazonaws.com/Azure+Fundamentals.pdf",
+      "time_data": {
+        "end": { "year": "2021", "month": "3" },
+        "start": { "year": "2021", "month": "3" }
+      },
+      "createdAt": "2022-11-21T09:37:57.876Z",
+      "updatedAt": "2022-11-21T18:44:28.611Z",
+      "publishedAt": "2022-11-21T09:38:00.972Z",
+      "present": true
     },
     {
       "id": 3,
-      "attributes": {
-        "title": "Python Core",
-        "title_en": "Python Core",
-        "description": null,
-        "description_en": null,
-        "item_url": "https://www.sololearn.com/certificates/CT-0QVQNX1B",
-        "time_data": {
-          "end": { "year": "2022", "month": "11" },
-          "start": { "year": "2022", "month": "10" }
-        },
-        "createdAt": "2022-11-21T18:49:23.681Z",
-        "updatedAt": "2022-11-21T18:49:26.649Z",
-        "publishedAt": "2022-11-21T18:49:26.518Z",
-        "present": null
-      }
+      "title": "Python Core",
+      "description": null,
+      "item_url": "https://www.sololearn.com/certificates/CT-0QVQNX1B",
+      "time_data": {
+        "end": { "year": "2022", "month": "11" },
+        "start": { "year": "2022", "month": "10" }
+      },
+      "createdAt": "2022-11-21T18:49:23.681Z",
+      "updatedAt": "2022-11-21T18:49:26.649Z",
+      "publishedAt": "2022-11-21T18:49:26.518Z",
+      "present": null
     },
     {
       "id": 2,
-      "attributes": {
-        "title": "Ingenieria en sistemas computacionales",
-        "title_en": "Computer Systems engineer",
-        "description": "Soy estudiante en el Instituto tecnológico de Tijuana.",
-        "description_en": "I am a student at Instituto tecnológico de Tijuana.",
-        "item_url": "https://www.tijuana.tecnm.mx",
-        "time_data": {
-          "end": { "year": "2023", "month": "11" },
-          "start": { "year": "2019", "month": "8" }
-        },
-        "createdAt": "2022-11-21T18:45:46.733Z",
-        "updatedAt": "2022-11-21T18:54:07.344Z",
-        "publishedAt": "2022-11-21T18:46:00.787Z",
-        "present": true
-      }
+      "title": "Computer Systems engineer",
+      "description": "Former student at the Instituto Tecnológico de Tijuana.",
+      "item_url": "https://www.tijuana.tecnm.mx",
+      "time_data": {
+        "end": { "year": "2024", "month": "4" },
+        "start": { "year": "2019", "month": "8" }
+      },
+      "createdAt": "2022-11-21T18:45:46.733Z",
+      "updatedAt": "2022-11-21T18:54:07.344Z",
+      "publishedAt": "2022-11-21T18:46:00.787Z",
+      "present": false
     },
     {
       "id": 4,
-      "attributes": {
-        "title": "React JS | LinkedIn Skills Assessment Badge",
-        "title_en": "React JS | LinkedIn Skills Assessment Badge",
-        "description": null,
-        "description_en": null,
-        "item_url": "https://www.linkedin.com/in/jordiespinoza/",
-        "time_data": {
-          "end": { "year": "2022", "month": "8" },
-          "start": { "year": "2022", "month": "8" }
-        },
-        "createdAt": "2022-11-22T08:24:04.411Z",
-        "updatedAt": "2022-11-22T08:24:07.511Z",
-        "publishedAt": "2022-11-22T08:24:07.381Z",
-        "present": false
-      }
+      "title": "React JS | LinkedIn Skills Assessment Badge",
+      "description": null,
+      "item_url": "https://www.linkedin.com/in/jordiespinoza/",
+      "time_data": {
+        "end": { "year": "2022", "month": "8" },
+        "start": { "year": "2022", "month": "8" }
+      },
+      "createdAt": "2022-11-22T08:24:04.411Z",
+      "updatedAt": "2022-11-22T08:24:07.511Z",
+      "publishedAt": "2022-11-22T08:24:07.381Z",
+      "present": false
     }
   ]
 }

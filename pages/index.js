@@ -1,168 +1,72 @@
-import { useState } from "react";
-import { formatLanguageText, TextComponent } from "components";
-import { PageContainer } from "components/containers";
 import { HeaderComponent } from "components/header";
-import { Section } from "components/sections";
-import { SkillSet } from "components/skillset";
-import { useLanguage } from "hooks";
-import en from "utils/locales/home/en.json";
-import es from "utils/locales/home/es.json";
-import styles from "../styles/Home.module.sass";
-import styled from "styled-components";
-import { ExperienceCard } from "components/cards/experience";
-import { EducationCard } from "components/cards/education";
-import { ProjectCard } from "components/cards/projects";
-import { Modal } from "components/modal";
+import Image from "next/image";
 
 import skillset from "data/skillset.json";
 import experience from "data/experience.json";
 import education from "data/education.json";
 import projects from "data/projects.json";
 import about from "data/about.json";
+import { SkillSet } from "components/skillset";
+import { ExperienceCard } from "components/cards/experience";
+import { EducationCard } from "components/cards/education";
+import { ProjectCard } from "components/cards/projects";
 
-const Container = styled.div`
-  .experience,
-  .education {
-    background-color: ${(props) => props.theme.quinaryColor};
-    p,
-    h2 {
-      color: ${(props) => props.theme.textColorInverted};
-    }
-  }
-  .projects {
-    background-color: ${(props) => props.theme.primaryColor};
-    p,
-    h2 {
-      color: ${(props) => props.theme.textColorInverted};
-    }
-  }
-`;
 export default function Home() {
-  const { t, language } = useLanguage({ es, en });
-  const [selectedProject, setSelectedProject] = useState(null);
-
-  console.log(skillset, experience, education, projects, about);
   return (
-    <PageContainer title={t.title} description={t.description}>
-      <div className={styles.container}>
-        <HeaderComponent data={about} />
-      </div>
-      <div className={styles.about}>
-        <Section
-          title={t.about.title}
-          image="https://portfolio-jordi.s3.amazonaws.com/_DSC4508.JPG"
-          locales
-          background="primary"
-        >
-          <TextComponent
-            locales={formatLanguageText({
-              language,
-              en: about.data?.attributes?.description_en,
-              es: about.data?.attributes?.description,
-            })}
-            type="p"
+    <>
+      <HeaderComponent data={about} />
+      <div
+        className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] bg-[#003566]"
+        id="about"
+      >
+        <div className="w-full h-full">
+          <Image
+            src="https://portfolio-jordi.s3.amazonaws.com/_DSC4508.JPG"
+            alt="Jordi Espinoza"
+            width={400}
+            height={400}
+            className="w-full h-full object-cover"
           />
-          <TextComponent
-            locales={t.about.skill_set}
-            type="p"
-            modifiers={["tertiaryColor"]}
-          />
-          <SkillSet data={skillset.data.attributes?.data.data} />
-        </Section>
+        </div>
+
+        <div className="p-8 lg:p-4 flex flex-col gap-2 justify-center">
+          <h2 className="text-2xl">About me</h2>
+          <p className="text-sm">{about.description}</p>
+          <p className="text-sm mb-4">
+            Some of the technologies and tools that I have worked with are:{" "}
+          </p>
+          <SkillSet data={skillset.data} />
+        </div>
       </div>
-      <Container>
-        <div className={`${styles.experience} experience`}>
-          <div className={styles.experience__title}>
-            <TextComponent
-              type="h2"
-              locales={t.experience.title}
-              modifiers={["tertiaryColor"]}
-            />
-            <TextComponent type="p" locales={t.experience.description} />
-          </div>
-          <div className={styles.experience__content}>
-            {experience?.data.map((item, index) => (
-              <ExperienceCard key={index} data={item?.attributes} />
+
+      <div className="bg-[#000814] p-8 flex flex-col gap-8" id="experience">
+        <h2 className="text-2xl">Experience</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {experience?.data.map((item, index) => (
+            <ExperienceCard key={index} data={item} />
+          ))}
+        </div>
+      </div>
+
+      <div className="bg-[#000814] p-8 flex flex-col gap-8" id="projects">
+        <h2 className="text-2xl">Projects</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {projects.data
+            .sort((a, b) => b.featured - a.featured)
+            .map((item, index) => (
+              <ProjectCard key={index} data={item} />
             ))}
-          </div>
         </div>
-        <div className={`${styles.education} education`}>
-          <div className={styles.education__title}>
-            <TextComponent
-              type="h2"
-              locales={t.education.title}
-              modifiers={["tertiaryColor"]}
-            />
-          </div>
-          <div className={styles.experience__content}>
-            {education?.data.map((item, index) => (
-              <EducationCard key={index} data={item?.attributes} />
-            ))}
-          </div>
+      </div>
+
+      <div className="bg-[#003566] p-8 flex flex-col gap-8" id="education">
+        <h2 className="text-2xl">Education and Certifications</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          {education?.data.map((item, index) => (
+            <EducationCard key={index} data={item} />
+          ))}
         </div>
-        <div className={`${styles.projects} projects`}>
-          <div className={styles.projects__title}>
-            <TextComponent
-              type="h2"
-              locales={t.projects.title}
-              modifiers={["tertiaryColor"]}
-            />
-          </div>
-          <div className={styles.projects__content}>
-            {projects.data
-              .sort((a, b) => b.attributes?.featured - a.attributes?.featured)
-              .map((item, index) => (
-                <ProjectCard
-                  key={index}
-                  data={item?.attributes}
-                  onClick={(data) => setSelectedProject(data)}
-                />
-              ))}
-          </div>
-          <Modal
-            show={selectedProject}
-            title={formatLanguageText({
-              language,
-              en: selectedProject?.name_en,
-              es: selectedProject?.name,
-            })}
-            onClose={() => setSelectedProject(null)}
-          >
-            <div className={styles.modal__content}>
-              <TextComponent
-                type="p"
-                text={{
-                  en: selectedProject?.description_en,
-                  es: selectedProject?.description,
-                }}
-              />
-              {selectedProject?.urls?.data?.length > 0 && (
-                <div className={styles.modal__content__links}>
-                  <TextComponent type="h5" locales={t.projects.links} />
-                  <ul>
-                    {selectedProject?.urls?.data?.map((item, index) => (
-                      <li key={index}>
-                        <a
-                          href={item?.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {item?.label}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-              {selectedProject?.image_url && (
-                <div className={styles.modal__content__image}>
-                  <img src={selectedProject?.image_url} alt="" />
-                </div>
-              )}
-            </div>
-          </Modal>
-        </div>
-      </Container>
-    </PageContainer>
+      </div>
+    </>
   );
 }

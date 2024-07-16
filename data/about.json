@@ -1,18 +1,10 @@
 {
-  "data": {
-    "attributes": {
-      "name": "Jordi Espinoza",
-      "description": "Desarrollador Front-end con 2 años de experiencia en desarrollo de software, que ha trabajado extensamente en el aspecto front-end de aplicaciones web utilizando React JS, Next JS y JavaScript.",
-      "description_en": "An experienced Front-end Developer with 2 years of software development experience, who has worked extensively on the front-end aspect of web applications using React JS, Next JS and JavaScript.",
-      "createdAt": "2022-11-21T07:47:03.010Z",
-      "updatedAt": "2022-11-21T09:36:55.741Z",
-      "publishedAt": "2022-11-21T07:47:05.586Z",
-      "cv_url": "https://portfolio-jordi.s3.amazonaws.com/cv_updated.pdf",
-      "email_contact": "jordi8101@gmail.com",
-      "header_description": null,
-      "header_subtitle": "Desarrollador | GitHub Campus Expert",
-      "header_description_en": null,
-      "header_subtitle_en": "Developer | GitHub Campus Expert"
-    }
-  }
+  "name": "Jordi Espinoza",
+  "description": "Software Engineer with over 3 years of experience in software development, focusing on full stack development. Member of GitHub Campus Experts and founder of Tribal Devs, a community organization dedicated to help software engineer students. My goal is to learn the best practices and principles to craft robust systems",
+  "createdAt": "2022-11-21T07:47:03.010Z",
+  "updatedAt": "2022-11-21T09:36:55.741Z",
+  "publishedAt": "2022-11-21T07:47:05.586Z",
+  "cv_url": "https://portfolio-jordi.s3.amazonaws.com/cv_updated.pdf",
+  "email_contact": "jordi8101@gmail.com",
+  "header_subtitle": "Software Engineer | GitHub Campus Expert"
 }

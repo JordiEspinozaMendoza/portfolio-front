@@ -1,25 +1,23 @@
 import Icon from "components/icon";
-import React from "react";
-import styles from "./styles.module.sass";
-import styled from "styled-components";
-const Container = styled.div`
-  p,
-  svg,
-  a {
-    color: ${(props) => props.theme.textColorInverted};
-  }
-`;
+
 export const SkillSet = ({ data }) => {
   return (
-    <Container className={styles.skillset}>
-      {data.map((item, index) => (
-        <div className={styles.skill__item} key={index}>
-          <a href={item.link} target="_blank" rel="noopener noreferrer">
-            <Icon nameIcon={item.icon} />
-          </a>
-          <p>{item.name}</p>
-        </div>
-      ))}
-    </Container>
+    <div className="grid grid-cols-[repeat(auto-fill,minmax(120px,1fr))] gap-3">
+      {data
+        .sort((a, b) => b.name < a.name)
+        .map((item, index) => (
+          <div className="flex items-center gap-2" key={index}>
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-xl"
+            >
+              <Icon nameIcon={item.icon} className="w-4 h-4" />
+            </a>
+            <p className="text-sm m-0">{item.name}</p>
+          </div>
+        ))}
+    </div>
   );
 };

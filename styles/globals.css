@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 
 html,
 body {
@@ -9,8 +13,7 @@ body {
 p,
 span,
 a {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-family: "Montserrat", system-ui;
 }
 
 h1,
@@ -19,8 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-family: "Montserrat", system-ui;
 }
 
 a {
@@ -32,12 +34,36 @@ a {
   box-sizing: border-box;
 }
 
-.loader__page,
-.error__page {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: #ffc300;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #ffbb00;
+}
+
+.btn-secondary {
+  background-color: #0b090a;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #0a0809;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -46,7 +72,18 @@ a {
   }
 
   body {
-    color: white;
+    color: #fff;
     background: black;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    color: #fff;
+    background: white;
   }
 }

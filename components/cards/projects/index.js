@@ -1,48 +1,39 @@
-/* eslint-disable @next/next/no-img-element */
-import { TextComponent } from "components/texts";
-import React from "react";
-import styles from "./styles.module.sass";
-import styled from "styled-components";
-const Container = styled.div`
-  p,
-  h3 {
-    color: ${(props) => props.theme.textColorInverted};
-  }
-`;
-export const ProjectCard = ({ data, onClick }) => {
-  const { name, name_en, image_url, tags } = data;
+import Image from "next/image";
+
+export const ProjectCard = ({ data }) => {
+  const { name, image_url, tags, description } = data;
+
   return (
-    <Container className={styles.project__card}>
-      <div className={styles.project__card__content}>
-        <div className={styles.project__card__image}>
-          <img src={image_url} alt={name_en} onClick={() => onClick(data)} />
-        </div>
-        <div className={styles.project__card__text}>
-          <TextComponent
-            type="h3"
-            text={{
-              en: name_en,
-              es: name,
-            }}
-          />
-          {tags?.data?.length > 0 && (
-            <div className={styles.project__card__text__tags}>
-              <TextComponent type="p" text="Tags:" disableLocales />{" "}
-              <div className={styles.project__card__text__tags__list}>
-                {tags.data.map((tag, index) => (
-                  <TextComponent
-                    type="p"
-                    text={`${tag}${index !== tags.data.length - 1 ? "," : " "}`}
-                    disableLocales
-                    key={tag}
-                    className={styles.project__card__text__tags__tag}
-                  />
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
+    <div className="flex flex-col gap-4">
+      <div className="flex justify-center items-center overflow-hidden">
+        <Image
+          src={image_url}
+          alt={name}
+          width={400}
+          height={400}
+          quality={100}
+          className="object-contain w-full h-auto"
+        />
       </div>
-    </Container>
+      <div className="flex flex-col gap-2">
+        <h3 className="m-0">{name}</h3>
+
+        {tags?.data?.length > 0 && (
+          <div className="flex flex-col gap-2">
+            <p className="m-0">Tools: </p>
+            <div className="flex flex-wrap items-center gap-1 text-sm">
+              {tags.data
+                .sort((a, b) => a > b)
+                .map((tag, index) => (
+                  <p className="m-0" key={index}>
+                    {`${tag}${index !== tags.data.length - 1 ? "," : " "}`}
+                  </p>
+                ))}
+            </div>
+          </div>
+        )}
+        <p className="text-sm m-0">{description}</p>
+      </div>
+    </div>
   );
 };

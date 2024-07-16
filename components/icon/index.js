@@ -1,4 +1,3 @@
-import React from "react";
 import loadable from "@loadable/component";
 import PropTypes from "prop-types";
 export default function Icon({ nameIcon, onClick }) {
@@ -17,9 +16,4 @@ export default function Icon({ nameIcon, onClick }) {
 Icon.propTypes = {
   nameIcon: PropTypes.string.isRequired,
   onClick: PropTypes.func,
-};
-
-Icon.defaultProps = {
-  nameIcon: "AiOutlineUser",
-  onClick: () => {},
 };

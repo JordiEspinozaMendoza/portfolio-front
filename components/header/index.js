@@ -1,92 +1,45 @@
-/* eslint-disable @next/next/no-img-element */
-import { Button } from "components/buttons";
-import { formatLanguageText, TextComponent } from "components/texts";
-import { useLanguage } from "hooks";
-import React from "react";
-import styled from "styled-components";
-import en from "./locales/en.json";
-import es from "./locales/es.json";
-import styles from "./styles.module.sass";
-const Container = styled.div`
-  background-color: ${(props) => props.theme.header.background};
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: ${(props) => props.theme.header.color};
-  }
-`;
-export const HeaderComponent = ({ data, error }) => {
-  const { attributes } = data.data || {};
-  const { t, language } = useLanguage({ en, es });
+import Link from "next/link";
+import Image from "next/image";
+
+export const HeaderComponent = ({ data }) => {
+  const { header_subtitle, cv_url, email_contact } = data;
+
   return (
-    <Container className={styles.header}>
-      <div className={styles.header__container}>
-        <div className={styles.header__left}>
-          <div className={styles.header__left__content}>
-            <div className={styles.header__text}>
-              <TextComponent
-                type="p"
-                locales={
-                  attributes &&
-                  attributes?.header_subtitle &&
-                  attributes?.header_subtitle_en &&
-                  !error
-                    ? formatLanguageText({
-                        language,
-                        en: attributes?.header_subtitle_en,
-                        es: attributes?.header_subtitle,
-                      })
-                    : t.subtitle
-                }
-                modifiers={["secondaryColor"]}
-              />
-              <TextComponent
-                type="h1"
-                locales={
-                  attributes && attributes?.name && !error
-                    ? attributes?.name
-                    : t.title
-                }
-              />
-            </div>
-            <div className={styles.header__buttons}>
-              {attributes && attributes?.cv_url && !error && (
-                <Button
-                  type="secondary"
-                  locales={t.button_1}
-                  onClick={() => window.open(attributes?.cv_url, "_blank")}
-                />
-              )}
-              {attributes && attributes?.email_contact && !error && (
-                <Button
-                  type="tertiary"
-                  locales={t.button_2}
-                  onClick={() =>
-                    window.open(
-                      `mailto:${attributes?.email_contact}?subject=Hello%20Jordi%20Espinoza`,
-                      "_blank"
-                    )
-                  }
-                />
-              )}
-            </div>
+    <div className="flex items-center justify-center gap-8 h-[70vh] bg-[#000814] p-8 flex-col-reverse md:flex-row md:h-auto">
+      <div className="flex items-center justify-center gap-8 flex-col md:flex-row">
+        <div className="flex flex-col gap-4 items-center text-center md:items-start md:text-left">
+          <div className="flex flex-col gap-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl">
+              Hey, I'm Jordi Espinoza
+            </h1>
+            <p>{header_subtitle}</p>
           </div>
-        </div>
-        <div className={styles.header__right}>
-          {/* mobile devices */}
-          <div className={styles.header__avatar}>
-            <img
-              src="https://portfolio-jordi.s3.amazonaws.com/hackmty.jpeg"
-              alt="Jordi Espinoza"
-              className={styles.header__avatar__image}
-            />
+          <div className="flex flex-wrap gap-4 justify-center md:justify-start w-full">
+            <Link href={cv_url} passHref={true}>
+              <button className="btn btn-primary w-full md:w-auto">
+                View CV
+              </button>
+            </Link>
+            <Link
+              href={`mailto:${email_contact}?subject=Hello%20Jordi%20Espinoza`}
+              passHref={true}
+            >
+              <button className="btn btn-secondary w-full md:w-auto">
+                Contact
+              </button>
+            </Link>
           </div>
         </div>
       </div>
-    </Container>
+      <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden">
+        <Image
+          src="https://portfolio-jordi.s3.amazonaws.com/hackmty.jpeg"
+          alt="Jordi Espinoza"
+          width={400}
+          height={400}
+          className="object-cover w-full h-full"
+        />
+      </div>
+    </div>
   );
 };
