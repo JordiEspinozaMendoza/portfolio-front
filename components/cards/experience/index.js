@@ -1,28 +1,23 @@
 import { handleGetTime } from "utils";
-import styles from "./styles.module.sass";
 import Link from "next/link";
 
 export const ExperienceCard = ({ data }) => {
-  const { title_en, description_en, company, time_data, company_url, present } =
-    data;
+  const { title, description, company, time_data, company_url, present } = data;
 
   return (
-    <div className={styles.experience__card}>
-      <div className={styles.experience__card__title}>
-        <h3>{title_en}</h3>
+    <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-2">
+        <h3>{title}</h3>
         <Link
           href={company_url}
-          className={styles.experience__card__title__company}
+          className="text-blue-500 underline hover:text-blue-700"
         >
           {company}
         </Link>
-
-        <p className={styles.experience__card__title__time}>
-          {handleGetTime(time_data, present)}
-        </p>
+        <p className="text-gray-500">{handleGetTime(time_data, present)}</p>
       </div>
-      <div className={styles.experience__card__description}>
-        <p>{description_en}</p>
+      <div className="text-sm">
+        <p>{description}</p>
       </div>
     </div>
   );

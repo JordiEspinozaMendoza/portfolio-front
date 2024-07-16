@@ -2,229 +2,197 @@
   "data": [
     {
       "id": 5,
-      "attributes": {
-        "name_en": "Consultec",
-        "description_en": "This project allows communication between several clients through instant messaging, using socket.io and React Js on the frontend side.",
-        "urls": {
-          "data": [
-            {
-              "url": "https://jocular-raindrop-02e6cf.netlify.app",
-              "label": "Website"
-            },
-            {
-              "url": "https://github.com/TribalDevs/consultec-front",
-              "label": "Frontend Repo"
-            },
-            {
-              "url": "https://github.com/TribalDevs/consultec-backend",
-              "label": "Backend Repo"
-            },
-            {
-              "url": "https://github.com/TribalDevs/consultec-server-socket",
-              "label": "Socket.io Repo"
-            }
-          ]
-        },
-        "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2022-11-21+at+23.53.04.png",
-        "featured": null,
-        "createdAt": "2022-11-22T08:15:11.302Z",
-        "updatedAt": "2022-11-22T08:15:14.339Z",
-        "publishedAt": "2022-11-22T08:15:14.200Z",
-        "tags": {
-          "data": ["React JS", "Socket.io", "Django", "Node js", "Heroku"]
-        }
+      "name": "Consultec",
+      "description": "This project allows communication between several clients through instant messaging, using socket.io and React Js on the frontend side.",
+      "urls": {
+        "data": [
+          {
+            "url": "https://jocular-raindrop-02e6cf.netlify.app",
+            "label": "Website"
+          },
+          {
+            "url": "https://github.com/TribalDevs/consultec-front",
+            "label": "Frontend Repo"
+          },
+          {
+            "url": "https://github.com/TribalDevs/consultec-backend",
+            "label": "Backend Repo"
+          },
+          {
+            "url": "https://github.com/TribalDevs/consultec-server-socket",
+            "label": "Socket.io Repo"
+          }
+        ]
+      },
+      "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2022-11-21+at+23.53.04.png",
+      "featured": null,
+      "createdAt": "2022-11-22T08:15:11.302Z",
+      "updatedAt": "2022-11-22T08:15:14.339Z",
+      "publishedAt": "2022-11-22T08:15:14.200Z",
+      "tags": {
+        "data": ["React JS", "Socket.io", "Django", "Node js", "Heroku"]
       }
     },
     {
       "id": 6,
-      "attributes": {
-        "name": "YOU ARE MY SUNSHINE - KINICH-AHAU",
-        "name_en": "YOU ARE MY SUNSHINE - KINICH-AHAU",
-        "description": "Aplicación web para ver niveles de radiación en distintas zonas del mundo Ofrece la facilidad de seleccionar una ubicación de manera sencilla y amigable para el usuario sin tener que dar datos de latitud y longitud.",
-        "description_en": "Web application to see radiation levels in different areas of the world It offers the facility to select a location in a simple and user-friendly way without having to provide latitude and longitude data.",
-        "urls": {
-          "data": [
-            {
-              "url": "https://github.com/JordiEspinozaMendoza/KINICH-AHAU",
-              "label": "GitHub Repo"
-            }
-          ]
-        },
-        "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2022-11-22+at+0.16.15.png",
-        "featured": null,
-        "createdAt": "2022-11-22T08:18:25.812Z",
-        "updatedAt": "2022-11-22T08:18:28.755Z",
-        "publishedAt": "2022-11-22T08:18:28.623Z",
-        "tags": { "data": ["React JS", "Google Maps", "Heroku"] }
-      }
+      "name": "YOU ARE MY SUNSHINE - KINICH-AHAU",
+      "description": "Web application to see radiation levels in different areas of the world It offers the facility to select a location in a simple and user-friendly way without having to provide latitude and longitude data.",
+      "urls": {
+        "data": [
+          {
+            "url": "https://github.com/JordiEspinozaMendoza/KINICH-AHAU",
+            "label": "GitHub Repo"
+          }
+        ]
+      },
+      "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2022-11-22+at+0.16.15.png",
+      "featured": null,
+      "createdAt": "2022-11-22T08:18:25.812Z",
+      "updatedAt": "2022-11-22T08:18:28.755Z",
+      "publishedAt": "2022-11-22T08:18:28.623Z",
+      "tags": { "data": ["React JS", "Google Maps", "Heroku"] }
     },
     {
       "id": 2,
-      "attributes": {
-        "name": "Odessa Turismo Website",
-        "name_en": "Odessa Turismo Website",
-        "description": "Aplicación web desarrollada con React JS y Django, muestra información sobre nuevos viajes y ofertas.",
-        "description_en": "Web application developed with React JS and Django, it shows information about new trips and offers.",
-        "urls": {
-          "data": [
-            { "url": "https://www.odessaturismo.com", "label": "Website" }
-          ]
-        },
-        "image_url": "https://portfolio-jordi.s3.amazonaws.com/Screenshot+2022-11-20+at+18.55.56.png",
-        "featured": true,
-        "createdAt": "2022-11-21T18:32:42.511Z",
-        "updatedAt": "2022-11-21T18:32:45.571Z",
-        "publishedAt": "2022-11-21T18:32:45.441Z",
-        "tags": {
-          "data": [
-            "React JS",
-            "Web",
-            "Django",
-            "Python",
-            "Google Maps",
-            "Socket io",
-            "AWS S3",
-            "Heroku",
-            "PostgreSQL",
-            "Aws RDS"
-          ]
-        }
+      "name": "Odessa Turismo Website",
+      "description": "Web application developed with React JS and Django, it shows information about new trips and offers.",
+      "urls": {
+        "data": [{ "url": "https://www.odessaturismo.com", "label": "Website" }]
+      },
+      "image_url": "https://portfolio-jordi.s3.amazonaws.com/Screenshot+2022-11-20+at+18.55.56.png",
+      "featured": true,
+      "createdAt": "2022-11-21T18:32:42.511Z",
+      "updatedAt": "2022-11-21T18:32:45.571Z",
+      "publishedAt": "2022-11-21T18:32:45.441Z",
+      "tags": {
+        "data": [
+          "React JS",
+          "Web",
+          "Django",
+          "Python",
+          "Google Maps",
+          "Socket io",
+          "AWS S3",
+          "Heroku",
+          "PostgreSQL",
+          "Aws RDS"
+        ]
       }
     },
     {
       "id": 1,
-      "attributes": {
-        "name": "Nación Verde",
-        "name_en": "Nación Verde",
-        "description": "Nacion Verde Website",
-        "description_en": "Nacion Verde Website",
-        "urls": {
-          "data": [{ "url": "https://www.nacionverde.org", "label": "Website" }]
-        },
-        "image_url": "https://portfolio-jordi.s3.amazonaws.com/Screenshot+2022-11-21+at+10.23.05.png",
-        "featured": true,
-        "createdAt": "2022-11-21T09:43:01.509Z",
-        "updatedAt": "2022-11-21T18:33:31.705Z",
-        "publishedAt": "2022-11-21T09:43:04.584Z",
-        "tags": {
-          "data": [
-            "React JS",
-            "Web",
-            "Django",
-            "Python",
-            "AWS S3",
-            "Heroku",
-            "PostgreSQL",
-            "AWS RDS",
-            "Stripe"
-          ]
-        }
+      "name": "Nación Verde",
+      "description": "Nacion Verde Website",
+      "urls": {
+        "data": [{ "url": "https://www.nacionverde.org", "label": "Website" }]
+      },
+      "image_url": "https://portfolio-jordi.s3.amazonaws.com/Screenshot+2022-11-21+at+10.23.05.png",
+      "featured": true,
+      "createdAt": "2022-11-21T09:43:01.509Z",
+      "updatedAt": "2022-11-21T18:33:31.705Z",
+      "publishedAt": "2022-11-21T09:43:04.584Z",
+      "tags": {
+        "data": [
+          "React JS",
+          "Web",
+          "Django",
+          "Python",
+          "AWS S3",
+          "Heroku",
+          "PostgreSQL",
+          "AWS RDS",
+          "Stripe"
+        ]
       }
     },
     {
       "id": 3,
-      "attributes": {
-        "name": "Tribal Devs",
-        "name_en": "Tribal Devs",
-        "description": "Sitio web desarrollado para la comunidad Tribal Devs, incluye un sistema para registrar eventos y recibir registros de la comunidad",
-        "description_en": "Website developed for the Tribal Devs community, includes a system to register events and receive registrations from the community.",
-        "urls": {
-          "data": [{ "url": "https://www.tribaldevs.com", "label": "Website" }]
-        },
-        "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2022-11-21+at+23.55.49.png",
-        "featured": null,
-        "createdAt": "2022-11-22T08:01:40.874Z",
-        "updatedAt": "2022-11-22T08:01:44.501Z",
-        "publishedAt": "2022-11-22T08:01:44.364Z",
-        "tags": { "data": ["Next JS", "Web", "Django", "Python"] }
-      }
+      "name": "Tribal Devs",
+      "description": "Website developed for the Tribal Devs community, includes a system to register events and receive registrations from the community.",
+      "urls": {
+        "data": [{ "url": "https://www.tribaldevs.com", "label": "Website" }]
+      },
+      "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2022-11-21+at+23.55.49.png",
+      "featured": null,
+      "createdAt": "2022-11-22T08:01:40.874Z",
+      "updatedAt": "2022-11-22T08:01:44.501Z",
+      "publishedAt": "2022-11-22T08:01:44.364Z",
+      "tags": { "data": ["Next JS", "Web", "Django", "Python"] }
     },
     {
       "id": 4,
-      "attributes": {
-        "name": "LifeLine",
-        "name_en": "LifeLine",
-        "description": "Proyecto desarrollado para el BioMedTech Baja Hackathon, es una aplicación tipo Uber para ambulancias, esto con el uso de React JS, Flutter y socket.io",
-        "description_en": "Project developed for the BioMedTech Baja Hackathon, it is an Uber-type application for ambulances, this with the use of React JS, Flutter and socket.io",
-        "urls": {
-          "data": [
-            { "url": "https://consuldev.netlify.app", "label": "Website" },
-            {
-              "url": "https://github.com/JordiEspinozaMendoza/lifeline-ambulance",
-              "label": "Frontend Repo"
-            },
-            {
-              "url": "https://github.com/JordiEspinozaMendoza/lifeline-back",
-              "label": "Backend Repo"
-            },
-            {
-              "url": "https://github.com/JordiEspinozaMendoza/lifeline-socket",
-              "label": "Socket.io Repo"
-            }
-          ]
-        },
-        "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2022-11-21+at+23.54.46.png",
-        "featured": false,
-        "createdAt": "2022-11-22T08:08:07.368Z",
-        "updatedAt": "2022-11-22T08:22:16.614Z",
-        "publishedAt": "2022-11-22T08:08:10.367Z",
-        "tags": { "data": ["React JS", "Socket.io", "Django", "Node js"] }
-      }
+      "name": "LifeLine",
+      "description": "Project developed for the BioMedTech Baja Hackathon, it is an Uber-type application for ambulances, this with the use of React JS, Flutter and socket.io",
+      "urls": {
+        "data": [
+          { "url": "https://consuldev.netlify.app", "label": "Website" },
+          {
+            "url": "https://github.com/JordiEspinozaMendoza/lifeline-ambulance",
+            "label": "Frontend Repo"
+          },
+          {
+            "url": "https://github.com/JordiEspinozaMendoza/lifeline-back",
+            "label": "Backend Repo"
+          },
+          {
+            "url": "https://github.com/JordiEspinozaMendoza/lifeline-socket",
+            "label": "Socket.io Repo"
+          }
+        ]
+      },
+      "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2022-11-21+at+23.54.46.png",
+      "featured": false,
+      "createdAt": "2022-11-22T08:08:07.368Z",
+      "updatedAt": "2022-11-22T08:22:16.614Z",
+      "publishedAt": "2022-11-22T08:08:10.367Z",
+      "tags": { "data": ["React JS", "Socket.io", "Django", "Node js"] }
     },
     {
       "id": 5,
-      "attributes": {
-        "name_en": "CapyCode",
-        "description_en": "The Code Interview Assistant is a powerful web application designed to improve the recruiting process of a software development company. It uses the OpenAI API to provide real-time support to both interviewers and interviewees during the process. This tool helps streamline the interview process by offering dynamic feedback on code quality, logic, and syntax without revealing answers.",
-        "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/270161799-dfb3f569-c691-4038-a8d9-4ed804b72744.png",
-        "featured": true,
-        "tags": { "data": ["React JS", "OpenAI", "Socket io"] }
-      }
+      "name": "CapyCode",
+      "description": "The Code Interview Assistant is a powerful web application designed to improve the recruiting process of a software development company. It uses the OpenAI API to provide real-time support to both interviewers and interviewees during the process. This tool helps streamline the interview process by offering dynamic feedback on code quality, logic, and syntax without revealing answers.",
+      "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/270161799-dfb3f569-c691-4038-a8d9-4ed804b72744.png",
+      "featured": true,
+      "tags": { "data": ["React JS", "OpenAI", "Socket io"] }
     },
     {
       "id": 6,
-      "attributes": {
-        "name_en": "miCoach",
-        "description_en": "I work as a Software Engineer in a project called miCoach, specializing in the MERN (Mongo, Express, React, Node) stack and using AWS, Bitbucket, Git, Jest, WordPress, and other technologies to develop robust applications. I implemented server side and client side rendering in this project to have a hybrid implementation.",
-        "featured": true,
-        "tags": {
-          "data": [
-            "React JS",
-            "Next JS",
-            "MERN",
-            "AWS",
-            "Bitbucket",
-            "Git",
-            "Jest",
-            "MongoDB"
-          ]
-        },
-        "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2024-06-23+at+3.40.10%E2%80%AFp.m..png"
-      }
+      "name": "miCoach",
+      "description": "I work as a Software Engineer in a project called miCoach, specializing in the MERN (Mongo, Express, React, Node) stack and using AWS, Bitbucket, Git, Jest, WordPress, and other technologies to develop robust applications. I implemented server side and client side rendering in this project to have a hybrid implementation.",
+      "featured": true,
+      "tags": {
+        "data": [
+          "React JS",
+          "Next JS",
+          "MERN",
+          "AWS",
+          "Bitbucket",
+          "Git",
+          "Jest",
+          "MongoDB"
+        ]
+      },
+      "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2024-06-23+at+3.40.10%E2%80%AFp.m..png"
     },
     {
       "id": "7",
-      "attributes": {
-        "name_en": "ITJ Library",
-        "description_en": "Web application developed with Next JS and Prisma ORM, it helps to manage the library of the organization.",
-        "featured": false,
-        "tags": {
-          "data": ["Next JS", "Prisma", "PostgreSQL", "Heroku", "Auth0"]
-        },
-        "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2024-06-23+at+3.43.47%E2%80%AFp.m..png"
-      }
+      "name": "ITJ Library",
+      "description": "Web application developed with Next JS and Prisma ORM, it helps to manage the library of the organization.",
+      "featured": false,
+      "tags": {
+        "data": ["Next JS", "Prisma", "PostgreSQL", "Heroku", "Auth0"]
+      },
+      "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2024-06-23+at+3.43.47%E2%80%AFp.m..png"
     },
     {
       "id": "8",
-      "attributes": {
-        "name_en": "Interview.io",
-        "description_en": "Platform that allows you to create and manage interviews, it includes a system to have a real-time conversation with the interviewee.",
-        "featured": false,
-        "tags": {
-          "data": ["React JS", "Angular", "Socket io", "Node js", "Heroku"]
-        },
-        "image_url": "https://portfolio-jordi.s3.amazonaws.com/Screenshot+2024-06-23+at+3.51.48%E2%80%AFp.m..png"
-      }
+      "name": "Interview.io",
+      "description": "Platform that allows you to create and manage interviews, it includes a system to have a real-time conversation with the interviewee.",
+      "featured": false,
+      "tags": {
+        "data": ["React JS", "Angular", "Socket io", "Node js", "Heroku"]
+      },
+      "image_url": "https://portfolio-jordi.s3.amazonaws.com/Screenshot+2024-06-23+at+3.51.48%E2%80%AFp.m..png"
     }
   ]
 }

@@ -1,161 +1,152 @@
 {
-  "data": {
-    "attributes": {
-      "data": {
-        "data": [
-          {
-            "icon": "DiReact",
-            "link": "https://reactjs.org/",
-            "name": "React"
-          },
-          {
-            "icon": "AiFillHtml5",
-            "link": "https://www.w3.org/html/",
-            "name": "HTML5"
-          },
-          {
-            "icon": "IoLogoJavascript",
-            "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-            "name": "JavaScript"
-          },
-          {
-            "icon": "DiPython",
-            "link": "https://www.python.org/",
-            "name": "Python"
-          },
-          {
-            "icon": "DiDjango",
-            "link": "https://www.djangoproject.com/",
-            "name": "Django"
-          },
-          { "icon": "DiScrum", "link": "https://scrum.org/", "name": "SCRUM" },
-          { "icon": "DiGit", "link": "https://git-scm.com/", "name": "Git" },
-          {
-            "icon": "AiFillGithub",
-            "link": "https://github.com",
-            "name": "GitHub"
-          },
-          {
-            "icon": "DiHeroku",
-            "link": "https://www.heroku.com/",
-            "name": "Heroku"
-          },
-          {
-            "icon": "SiAngular",
-            "link": "https://angular.io/",
-            "name": "Angular"
-          },
-          {
-            "icon": "DiCss3",
-            "link": "https://www.w3.org/Style/CSS/",
-            "name": "CSS3"
-          },
-          {
-            "icon": "DiSass",
-            "link": "https://sass-lang.com/",
-            "name": "SCSS"
-          },
-          {
-            "icon": "BsFillBootstrapFill",
-            "link": "https://getbootstrap.com/",
-            "name": "Bootstrap"
-          },
-          {
-            "icon": "VscAzure",
-            "link": "https://azure.microsoft.com/en-us/",
-            "name": "Azure"
-          },
-          {
-            "icon": "SiPostgresql",
-            "link": "https://www.postgresql.org/",
-            "name": "PostgreSQL"
-          },
-          {
-            "icon": "SiPostman",
-            "link": "https://www.getpostman.com/",
-            "name": "Postman"
-          },
-          {
-            "icon": "FaCcStripe",
-            "link": "https://stripe.com",
-            "name": "Stripe"
-          },
-          { "icon": "FaVuejs", "link": "https://vuejs.org", "name": "Vue js" },
-          {
-            "icon": "GrNode",
-            "link": "https://nodejs.org/en/",
-            "name": "Node js"
-          },
-          {
-            "icon": "SiNextdotjs",
-            "link": "https://nextjs.org",
-            "name": "Next js"
-          },
-          {
-            "icon": "SiTypescript",
-            "link": "https://www.typescriptlang.org/",
-            "name": "Typescript"
-          },
-          {
-            "link": "https://jestjs.io",
-            "icon": "SiJest",
-            "name": "Jest"
-          },
-          {
-            "icon": "SiSpring",
-            "link": "https://spring.io/projects/spring-boot",
-            "name": "Spring Boot"
-          },
-          {
-            "icon": "SiJava",
-            "link": "https://www.java.com",
-            "name": "Java"
-          },
-          {
-            "icon": "GrGraphQl",
-            "link": "https://graphql.org",
-            "name": "Graphql"
-          },
-          {
-            "icon": "SiMongodb",
-            "link": "https://www.mongodb.com",
-            "name": "MongoDB"
-          },
-          {
-            "icon": "SiDocker",
-            "link": "https://www.docker.com",
-            "name": "Docker"
-          },
-          {
-            "name": "AWS",
-            "link": "https://aws.amazon.com",
-            "icon": "SiAmazonaws"
-          },
-          {
-            "name": "Flask",
-            "link": "https://flask.palletsprojects.com",
-            "icon": "SiFlask"
-          },
-          {
-            "name": "FastAPI",
-            "link": "https://fastapi.tiangolo.com",
-            "icon": "SiFastapi"
-          },
-          {
-            "name": "C#",
-            "link": "https://docs.microsoft.com/en-us/dotnet/csharp",
-            "icon": "SiCsharp"
-          },
-          {
-            "name": "Auth0",
-            "link": "https://auth0.com",
-            "icon": "SiAuth0"
-          }
-        ]
-      },
-      "createdAt": "2022-11-21T07:31:36.102Z",
-      "updatedAt": "2022-12-30T01:54:22.997Z",
-      "publishedAt": "2022-11-21T07:31:39.185Z"
+  "data": [
+    {
+      "icon": "DiReact",
+      "link": "https://reactjs.org/",
+      "name": "React"
+    },
+    {
+      "icon": "AiFillHtml5",
+      "link": "https://www.w3.org/html/",
+      "name": "HTML5"
+    },
+    {
+      "icon": "IoLogoJavascript",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "name": "JavaScript"
+    },
+    {
+      "icon": "DiPython",
+      "link": "https://www.python.org/",
+      "name": "Python"
+    },
+    {
+      "icon": "DiDjango",
+      "link": "https://www.djangoproject.com/",
+      "name": "Django"
+    },
+    { "icon": "DiScrum", "link": "https://scrum.org/", "name": "SCRUM" },
+    { "icon": "DiGit", "link": "https://git-scm.com/", "name": "Git" },
+    {
+      "icon": "AiFillGithub",
+      "link": "https://github.com",
+      "name": "GitHub"
+    },
+    {
+      "icon": "DiHeroku",
+      "link": "https://www.heroku.com/",
+      "name": "Heroku"
+    },
+    {
+      "icon": "SiAngular",
+      "link": "https://angular.io/",
+      "name": "Angular"
+    },
+    {
+      "icon": "DiCss3",
+      "link": "https://www.w3.org/Style/CSS/",
+      "name": "CSS3"
+    },
+    {
+      "icon": "DiSass",
+      "link": "https://sass-lang.com/",
+      "name": "SCSS"
+    },
+    {
+      "icon": "BsFillBootstrapFill",
+      "link": "https://getbootstrap.com/",
+      "name": "Bootstrap"
+    },
+    {
+      "icon": "VscAzure",
+      "link": "https://azure.microsoft.com/en-us/",
+      "name": "Azure"
+    },
+    {
+      "icon": "SiPostgresql",
+      "link": "https://www.postgresql.org/",
+      "name": "PostgreSQL"
+    },
+    {
+      "icon": "SiPostman",
+      "link": "https://www.getpostman.com/",
+      "name": "Postman"
+    },
+    {
+      "icon": "FaCcStripe",
+      "link": "https://stripe.com",
+      "name": "Stripe"
+    },
+    { "icon": "FaVuejs", "link": "https://vuejs.org", "name": "Vue js" },
+    {
+      "icon": "GrNode",
+      "link": "https://nodejs.org/en/",
+      "name": "Node js"
+    },
+    {
+      "icon": "SiNextdotjs",
+      "link": "https://nextjs.org",
+      "name": "Next js"
+    },
+    {
+      "icon": "SiTypescript",
+      "link": "https://www.typescriptlang.org/",
+      "name": "Typescript"
+    },
+    {
+      "link": "https://jestjs.io",
+      "icon": "SiJest",
+      "name": "Jest"
+    },
+    {
+      "icon": "SiSpring",
+      "link": "https://spring.io/projects/spring-boot",
+      "name": "Spring Boot"
+    },
+    {
+      "icon": "SiJava",
+      "link": "https://www.java.com",
+      "name": "Java"
+    },
+    {
+      "icon": "GrGraphQl",
+      "link": "https://graphql.org",
+      "name": "Graphql"
+    },
+    {
+      "icon": "SiMongodb",
+      "link": "https://www.mongodb.com",
+      "name": "MongoDB"
+    },
+    {
+      "icon": "SiDocker",
+      "link": "https://www.docker.com",
+      "name": "Docker"
+    },
+    {
+      "name": "AWS",
+      "link": "https://aws.amazon.com",
+      "icon": "SiAmazonaws"
+    },
+    {
+      "name": "Flask",
+      "link": "https://flask.palletsprojects.com",
+      "icon": "SiFlask"
+    },
+    {
+      "name": "FastAPI",
+      "link": "https://fastapi.tiangolo.com",
+      "icon": "SiFastapi"
+    },
+    {
+      "name": "C#",
+      "link": "https://docs.microsoft.com/en-us/dotnet/csharp",
+      "icon": "SiCsharp"
+    },
+    {
+      "name": "Auth0",
+      "link": "https://auth0.com",
+      "icon": "SiAuth0"
     }
-  }
+  ]
 }
