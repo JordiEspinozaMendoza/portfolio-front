@@ -15,7 +15,7 @@ export const HeaderComponent = ({ data }) => {
             <p>{header_subtitle}</p>
           </div>
           <div className="flex flex-wrap gap-4 justify-center md:justify-start w-full">
-            <Link href={cv_url} passHref={true}>
+            <Link href={cv_url} passHref={true} target="_blank">
               <button className="btn btn-primary w-full md:w-auto">
                 View CV
               </button>
