@@ -4,7 +4,7 @@ import { socialLinks } from "../../constants";
 
 export const Navbar = () => {
   return (
-    <nav className="block sticky top-0 z-100 bg-[#001d3d] p-2.5">
+    <nav className="block sticky top-0 z-50 bg-[#001d3d] p-2.5">
       <div className="flex justify-between items-center">
         <div className="hover:cursor-pointer">
           <Link href="/">Jordi Espinoza</Link>

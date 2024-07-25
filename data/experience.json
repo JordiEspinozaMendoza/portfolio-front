@@ -3,19 +3,19 @@
     {
       "id": 6,
       "title": "Mentor",
-      "description": "I participated as a mentor in Skills for Women by the British Council. The program took place between January and August 2022 and consisted of a minimum of 12 hours of tutoring.",
+      "description": "I participated as a mentor in the Skills for Women program organized by the British Council. The program ran from January to August 2022, during which I dedicated a minimum of 12 hours to tutoring and guiding participants. My role involved providing support, sharing expertise, and helping women develop essential skills to advance their careers. The experience allowed me to contribute to their professional growth while enhancing my own mentoring and communication skills.",
       "time_data": {
         "end": { "year": "2022", "month": "6" },
         "start": { "year": "2021", "month": "8" }
       },
-      "company": "View",
+      "company": "British Council",
       "company_url": "https://portfolio-jordi.s3.amazonaws.com/Jordi+Espinoza+Mendoza.pdf",
       "present": false
     },
     {
       "id": 3,
       "title": "Software Developer",
-      "description": "I worked as a software developer developing the landing page of the company, as well as its administration system.\nI did things like sending email with AWS, deploying Django servers with Heroku, databases on AWS, and storage with AWS S3.",
+      "description": "In my role as a software developer, I was responsible for both creating and maintaining the company's landing page and its administration system. I focused on designing an engaging and responsive landing page that effectively represented the brand and optimized user experience. Additionally, I developed the administration system to facilitate efficient content management and operational control. I integrated AWS Simple Email Service (SES) to handle automated email notifications, ensuring reliable communication for user interactions and system alerts. For deployment, I utilized Heroku to manage and scale Django applications, handling various traffic loads and operational requirements seamlessly. Database management was handled through AWS RDS, which provided secure and high-availability storage solutions for the application’s data. I also implemented AWS S3 for file storage, ensuring scalable and secure handling of media uploads and static assets. This role required a comprehensive approach to web development and cloud technology, ensuring both the public-facing and administrative aspects of the system were robust and efficient.",
       "time_data": {
         "end": { "year": "2022", "month": "8" },
         "start": { "year": "2021", "month": "10" }
@@ -27,19 +27,19 @@
     {
       "id": 4,
       "title": "BioMedTech Baja Hackathon",
-      "description": "I participated in the BioMedTech Baja Hackathon and together with my team we developed an Uber-like application for ambulances, this with the use of Flutter and socket.io",
+      "description": "At the BioMedTech Baja Hackathon, my team and I developed an innovative Uber-like application for ambulances. The goal was to enhance emergency medical services by creating a platform that allows for efficient dispatch and real-time tracking of ambulances. We chose Flutter for its cross-platform capabilities, enabling us to build a responsive and user-friendly app for both iOS and Android. Additionally, we implemented socket.io to handle real-time communication, ensuring timely updates and interactions between users and emergency services. Our project aimed to improve response times and coordination in critical situations.",
       "time_data": {
         "end": { "year": "2022", "month": "8" },
         "start": { "year": "2022", "month": "8" }
       },
-      "company": "View",
+      "company": "BioMedTech Baja",
       "company_url": "https://portfolio-jordi.s3.amazonaws.com/Certificate+BioMedTech+Baja+Hackathon+-+Jordi+Espinoza.pdf",
       "present": false
     },
     {
       "id": 2,
       "title": "GitHub Campus Expert",
-      "description": "I currently belong to the GitHub Campus Experts Community, where I host activities and events for the school community on my campus, as well as attend GitHub Education workshops for community members.",
+      "description": "I am an active member of the GitHub Campus Experts Community, where I play a key role in organizing and hosting various activities and events for the student community on my campus. These events range from coding workshops and hackathons to networking sessions and tech talks, all aimed at fostering a vibrant and collaborative learning environment. In addition to hosting events, I participate in GitHub Education workshops specifically designed for community leaders like myself. These workshops provide valuable insights into best practices for community engagement, project management, and leveraging GitHub's tools and features effectively. My involvement in these activities not only helps enhance the technical skills and knowledge of fellow students but also strengthens the campus tech community by building connections and promoting collaborative projects.",
       "time_data": {
         "end": { "year": "2021", "month": "3" },
         "start": { "year": "2021", "month": "11" }
@@ -51,7 +51,7 @@
     {
       "id": 5,
       "title": "Software Developer",
-      "description": "I did things like sending email with AWS, deploying Django servers with Heroku, databases on AWS, and storage with AWS S3.",
+      "description": "I was involved in various aspects of cloud-based development and deployment. I managed email communication through AWS Simple Email Service (SES), ensuring reliable and scalable email functionality. For server deployment, I used Heroku to handle Django applications, facilitating smooth scaling and management. Additionally, I configured and maintained databases on AWS RDS, providing secure and high-performance data storage solutions. For file storage, I utilized AWS S3, enabling secure and efficient handling of media and static assets.",
       "time_data": {
         "end": { "year": "2022", "month": "7" },
         "start": { "year": "2021", "month": "10" }
@@ -63,7 +63,7 @@
     {
       "id": 1,
       "title": "Software Engineer",
-      "description": "I implemented technologies such as Web RTC and Sockets to develop applications in real time. I worked with payment gateways like Stripe on the client side (Frontend)\nI work with technologies like React JS and Next JS to develop web applications, as well as landing pages with the use of SSR\nI worked with Strapi to develop APIs to be consumed by web clients.",
+      "description": "I implemented real-time communication technologies such as WebRTC and WebSockets to develop applications that require instantaneous data exchange and interaction. On the client side, I integrated payment gateways like Stripe to facilitate secure and seamless transactions within web applications. For web development, I utilized React JS and Next JS to build dynamic and responsive applications. With Next JS, I also employed server-side rendering (SSR) to enhance performance and SEO for landing pages and other content-heavy sites. Additionally, I worked with Strapi to create and manage APIs, which were consumed by web clients to deliver data-driven functionalities and seamless user experiences.",
       "time_data": {
         "end": { "year": "2022", "month": "11" },
         "start": { "year": "2021", "month": "3" }
@@ -75,7 +75,7 @@
     {
       "id": 7,
       "title": "Software Engineer",
-      "description": "I work as a Software Engineer in the company, developing applications with the MERN stack, as well as other technologies like AWS, Bitbucket, Git, etc.",
+      "description": "I work as a Software Engineer on a project called miCoach, where I specialize in leveraging the MERN stack—MongoDB, Express.js, React.js, and Node.js—to build scalable and efficient applications. My role involves both server-side and client-side development, utilizing AWS for cloud services and Bitbucket for version control, along with Git for managing code changes. I also employ Jest for testing to ensure high-quality, reliable code. In my role, I implemented a hybrid rendering approach by integrating both server-side rendering (SSR) and client-side rendering (CSR). This hybrid approach optimizes the application's performance and enhances the user experience by improving initial load times and SEO, while still providing a dynamic, interactive user interface through React's CSR capabilities. Additionally, I work with WordPress for content management and customization, integrating it seamlessly with our React front-end to deliver a cohesive experience. My expertise also extends to other technologies and best practices in software development, ensuring that the applications we build are not only functional but also maintainable and scalable.",
       "time_data": {
         "start": { "year": "2023", "month": "1" },
         "end": { "year": "2023", "month": "1" }
@@ -87,7 +87,7 @@
     {
       "id": 8,
       "title": "Data Scientist",
-      "description": "I worked as a Data Scientist in the company, with technologies like Python, Pandas, Numpy, etc.",
+      "description": "I worked as a Data Scientist in the company, utilizing technologies such as Python, Pandas, Numpy, etc. I was responsible for analyzing large datasets to uncover patterns, develop predictive models, and provide actionable insights. My work involved collaborating with cross-functional teams to integrate data-driven solutions into business strategies and improve decision-making processes. Additionally, I contributed to the automation of data processing pipelines and the optimization of machine learning algorithms to enhance efficiency and accuracy.",
       "time_data": {
         "start": { "year": "2024", "month": "3" },
         "end": { "year": "2024", "month": "7" }
