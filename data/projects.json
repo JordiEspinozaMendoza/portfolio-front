@@ -213,6 +213,16 @@
         "data": ["Next JS", "Prisma", "PostgreSQL", "Vercel", "Supabase"]
       },
       "image_url": "https://portfolio-jordi.s3.us-east-1.amazonaws.com/Screenshot+2025-03-20+at+10.17.57%E2%80%AFp.m..png"
+    },
+    {
+      "id": "11",
+      "name": "Majo Floral Design Website",
+      "description": "Web application developed with Next JS and tailwind CSS, it displays the catalog of the organization.",
+      "featured": false,
+      "tags": {
+        "data": ["Next JS", "Tailwind CSS", "Vercel"]
+      },
+      "image_url": "https://portfolio-jordi.s3.us-east-1.amazonaws.com/Screenshot+2025-03-20+at+10.41.03%E2%80%AFp.m..png"
     }
   ]
 }
