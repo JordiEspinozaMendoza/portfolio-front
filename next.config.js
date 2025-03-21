@@ -12,6 +12,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "portfolio-jordi.s3.amazonaws.com",
       },
+      {
+        protocol: "https",
+        hostname: "portfolio-jordi.s3.us-east-1.amazonaws.com",
+      }
     ],
   },
 };

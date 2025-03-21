@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { HeaderComponent } from "components/header";
 import Image from "next/image";
 
@@ -13,8 +12,6 @@ import { ProjectCard } from "components/cards/projects";
 import { Timeline } from "components/timeline";
 
 export default function Home() {
-  const [showMoreProjects, setShowMoreProjects] = useState(false);
-
   return (
     <>
       <HeaderComponent data={about} />
@@ -48,19 +45,9 @@ export default function Home() {
         <h2 className="text-2xl">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.data
-            .sort((a, b) => b.featured - a.featured)
-            .slice(0, showMoreProjects ? projects.data.length : 6)
             .map((item, index) => (
               <ProjectCard key={index} data={item} />
             ))}
-        </div>
-        <div className="flex justify-center">
-          <button
-            className="btn btn-secondary"
-            onClick={() => setShowMoreProjects(!showMoreProjects)}
-          >
-            {showMoreProjects ? "Show less" : "Show more"}
-          </button>
         </div>
       </div>
 

@@ -193,6 +193,26 @@
         "data": ["React JS", "Angular", "Socket io", "Node js", "Heroku"]
       },
       "image_url": "https://portfolio-jordi.s3.amazonaws.com/Screenshot+2024-06-23+at+3.51.48%E2%80%AFp.m..png"
+    },
+    {
+      "id": "9",
+      "name": "Ing. Jessica Maria Casillas Shelly Portfolio",
+      "description": "Portfolio developed for the Ing. Jessica Maria Casillas Shelly, it shows her work and projects.",
+      "featured": true,
+      "tags": {
+        "data": ["Next JS", "Tailwind CSS", "Vercel"]
+      },
+      "image_url": "https://portfolio-jordi.s3.us-east-1.amazonaws.com/Screenshot+2025-03-20+at+10.18.14%E2%80%AFp.m..png"
+    },
+    {
+      "id": "10",
+      "name": "Acuario Piscis De BC",
+      "description": "Web application developed with Next JS and Prisma ORM, it helps to manage the aquarium of the organization.",
+      "featured": true,
+      "tags": {
+        "data": ["Next JS", "Prisma", "PostgreSQL", "Vercel", "Supabase"]
+      },
+      "image_url": "https://portfolio-jordi.s3.us-east-1.amazonaws.com/Screenshot+2025-03-20+at+10.17.57%E2%80%AFp.m..png"
     }
   ]
 }
