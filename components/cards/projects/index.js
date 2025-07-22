@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const ProjectCard = ({ data }) => {
-  const { name, image_url, tags, description } = data;
+  const { name, image_url, tags, description, link } = data;
 
-  return (
-    <div className="flex flex-col gap-4">
+  const renderProjectImage = (image_url, link) => {
+    return (
       <div className="flex justify-center items-center overflow-hidden">
         <Image
           src={image_url}
@@ -12,11 +13,32 @@ export const ProjectCard = ({ data }) => {
           width={400}
           height={400}
           quality={100}
-          className="object-contain w-full h-auto"
+          className={`object-contain w-full h-auto ${link ? "hover:scale-105 transition-transform duration-300" : ""
+            }`}
+          loading="lazy"
         />
       </div>
+    )
+  }
+
+  return (
+    <div className="flex flex-col gap-4">
+      {link ? (
+        <Link href={link} target="_blank" rel="noopener noreferrer">
+          {renderProjectImage(image_url, link)}
+        </Link>
+      ) : (
+        renderProjectImage(image_url, link)
+      )}
+
       <div className="flex flex-col gap-2">
-        <h3 className="m-0">{name}</h3>
+        {link ? (
+          <Link href={link} target ="_blank" rel="noopener noreferrer">
+            <h3 className="text-lg font-semibold hover:underline">{name}</h3>
+          </Link>
+        ) : (
+          <h3 className="text-lg font-semibold">{name}</h3>
+        )}
 
         {tags?.data?.length > 0 && (
           <div className="flex flex-col gap-2">

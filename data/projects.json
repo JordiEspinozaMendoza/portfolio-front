@@ -30,7 +30,13 @@
       "updatedAt": "2022-11-22T08:15:14.339Z",
       "publishedAt": "2022-11-22T08:15:14.200Z",
       "tags": {
-        "data": ["React JS", "Socket.io", "Django", "Node js", "Heroku"]
+        "data": [
+          "React JS",
+          "Socket.io",
+          "Django",
+          "Node js",
+          "Heroku"
+        ]
       },
       "freelance": false
     },
@@ -51,7 +57,13 @@
       "createdAt": "2022-11-22T08:18:25.812Z",
       "updatedAt": "2022-11-22T08:18:28.755Z",
       "publishedAt": "2022-11-22T08:18:28.623Z",
-      "tags": { "data": ["React JS", "Google Maps", "Heroku"] },
+      "tags": {
+        "data": [
+          "React JS",
+          "Google Maps",
+          "Heroku"
+        ]
+      },
       "freelance": false
     },
     {
@@ -59,7 +71,12 @@
       "name": "Odessa Turismo Website",
       "description": "Web application developed with React JS and Django, it shows information about new trips and offers.",
       "urls": {
-        "data": [{ "url": "https://www.odessaturismo.com", "label": "Website" }]
+        "data": [
+          {
+            "url": "https://www.odessaturismo.com",
+            "label": "Website"
+          }
+        ]
       },
       "image_url": "https://portfolio-jordi.s3.amazonaws.com/Screenshot+2022-11-20+at+18.55.56.png",
       "featured": true,
@@ -80,14 +97,20 @@
           "Aws RDS"
         ]
       },
-      "freelance": true
+      "freelance": true,
+      "link": "https://odessaturismo.netlify.app/"
     },
     {
       "id": 1,
       "name": "Nación Verde",
       "description": "Nacion Verde Website",
       "urls": {
-        "data": [{ "url": "https://www.nacionverde.org", "label": "Website" }]
+        "data": [
+          {
+            "url": "https://www.nacionverde.org",
+            "label": "Website"
+          }
+        ]
       },
       "image_url": "https://portfolio-jordi.s3.amazonaws.com/Screenshot+2022-11-21+at+10.23.05.png",
       "featured": true,
@@ -107,21 +130,34 @@
           "Stripe"
         ]
       },
-      "freelance": true
+      "freelance": true,
+      "link": "https://www.nacionverde.org/"
     },
     {
       "id": 3,
       "name": "Tribal Devs",
       "description": "Website developed for the Tribal Devs community, includes a system to register events and receive registrations from the community.",
       "urls": {
-        "data": [{ "url": "https://www.tribaldevs.com", "label": "Website" }]
+        "data": [
+          {
+            "url": "https://www.tribaldevs.com",
+            "label": "Website"
+          }
+        ]
       },
       "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2022-11-21+at+23.55.49.png",
       "featured": null,
       "createdAt": "2022-11-22T08:01:40.874Z",
       "updatedAt": "2022-11-22T08:01:44.501Z",
       "publishedAt": "2022-11-22T08:01:44.364Z",
-      "tags": { "data": ["Next JS", "Web", "Django", "Python"] },
+      "tags": {
+        "data": [
+          "Next JS",
+          "Web",
+          "Django",
+          "Python"
+        ]
+      },
       "freelance": false
     },
     {
@@ -130,7 +166,10 @@
       "description": "Project developed for the BioMedTech Baja Hackathon, it is an Uber-type application for ambulances, this with the use of React JS, Flutter and socket.io",
       "urls": {
         "data": [
-          { "url": "https://consuldev.netlify.app", "label": "Website" },
+          {
+            "url": "https://consuldev.netlify.app",
+            "label": "Website"
+          },
           {
             "url": "https://github.com/JordiEspinozaMendoza/lifeline-ambulance",
             "label": "Frontend Repo"
@@ -150,7 +189,14 @@
       "createdAt": "2022-11-22T08:08:07.368Z",
       "updatedAt": "2022-11-22T08:22:16.614Z",
       "publishedAt": "2022-11-22T08:08:10.367Z",
-      "tags": { "data": ["React JS", "Socket.io", "Django", "Node js"] },
+      "tags": {
+        "data": [
+          "React JS",
+          "Socket.io",
+          "Django",
+          "Node js"
+        ]
+      },
       "freelance": false
     },
     {
@@ -159,7 +205,13 @@
       "description": "The Code Interview Assistant is a powerful web application designed to improve the recruiting process of a software development company. It uses the OpenAI API to provide real-time support to both interviewers and interviewees during the process. This tool helps streamline the interview process by offering dynamic feedback on code quality, logic, and syntax without revealing answers.",
       "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/270161799-dfb3f569-c691-4038-a8d9-4ed804b72744.png",
       "featured": true,
-      "tags": { "data": ["React JS", "OpenAI", "Socket io"] },
+      "tags": {
+        "data": [
+          "React JS",
+          "OpenAI",
+          "Socket io"
+        ]
+      },
       "freelance": false
     },
     {
@@ -188,7 +240,13 @@
       "description": "Web application developed with Next JS and Prisma ORM, it helps to manage the library of the organization.",
       "featured": false,
       "tags": {
-        "data": ["Next JS", "Prisma", "PostgreSQL", "Heroku", "Auth0"]
+        "data": [
+          "Next JS",
+          "Prisma",
+          "PostgreSQL",
+          "Heroku",
+          "Auth0"
+        ]
       },
       "image_url": "https://portfolio-jordi.s3.amazonaws.com/images/Screenshot+2024-06-23+at+3.43.47%E2%80%AFp.m..png",
       "freelance": false
@@ -199,7 +257,13 @@
       "description": "Platform that allows you to create and manage interviews, it includes a system to have a real-time conversation with the interviewee.",
       "featured": false,
       "tags": {
-        "data": ["React JS", "Angular", "Socket io", "Node js", "Heroku"]
+        "data": [
+          "React JS",
+          "Angular",
+          "Socket io",
+          "Node js",
+          "Heroku"
+        ]
       },
       "image_url": "https://portfolio-jordi.s3.amazonaws.com/Screenshot+2024-06-23+at+3.51.48%E2%80%AFp.m..png",
       "freelance": false
@@ -210,10 +274,15 @@
       "description": "Portfolio developed for the Ing. Jessica Maria Casillas Shelly, it shows her work and projects.",
       "featured": true,
       "tags": {
-        "data": ["Next JS", "Tailwind CSS", "Vercel"]
+        "data": [
+          "Next JS",
+          "Tailwind CSS",
+          "Vercel"
+        ]
       },
       "image_url": "https://portfolio-jordi.s3.us-east-1.amazonaws.com/Screenshot+2025-07-22+at+12.09.09%E2%80%AFp.m..png",
-      "freelance": true
+      "freelance": true,
+      "link": "https://www.jessyshelly.com/"
     },
     {
       "id": "10",
@@ -221,10 +290,17 @@
       "description": "Web application developed with Next JS and Prisma ORM, it helps to manage the aquarium of the organization.",
       "featured": true,
       "tags": {
-        "data": ["Next JS", "Prisma", "PostgreSQL", "Vercel", "Supabase"]
+        "data": [
+          "Next JS",
+          "Prisma",
+          "PostgreSQL",
+          "Vercel",
+          "Supabase"
+        ]
       },
       "image_url": "https://portfolio-jordi.s3.us-east-1.amazonaws.com/Screenshot+2025-07-22+at+12.08.57%E2%80%AFp.m..png",
-      "freelance": true
+      "freelance": true,
+      "link": "https://www.acuariopiscisdebc.com/"
     },
     {
       "id": "11",
@@ -232,10 +308,15 @@
       "description": "Web application developed with Next JS and tailwind CSS, it displays the catalog of the organization.",
       "featured": false,
       "tags": {
-        "data": ["Next JS", "Tailwind CSS", "Vercel"]
+        "data": [
+          "Next JS",
+          "Tailwind CSS",
+          "Vercel"
+        ]
       },
       "image_url": "https://portfolio-jordi.s3.us-east-1.amazonaws.com/Screenshot+2025-03-20+at+10.41.03%E2%80%AFp.m..png",
-      "freelance": true
+      "freelance": true,
+      "link": "https://majo-floral-design-store.vercel.app/"
     }
   ]
 }
