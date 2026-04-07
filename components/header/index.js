@@ -33,7 +33,7 @@ export const HeaderComponent = ({ data }) => {
       </div>
       <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden">
         <Image
-          src="https://portfolio-jordi.s3.amazonaws.com/hackmty.jpeg"
+          src="https://portfolio-jordi.s3.us-east-1.amazonaws.com/profile.jpeg"
           alt="Jordi Espinoza"
           width={400}
           height={400}
